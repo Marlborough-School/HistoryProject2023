@@ -119,12 +119,12 @@ monogatari.script ({
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
+				'Text': 'purple 2 Grapes',
+				'Do': 'jump purple2Grape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
-				'Do': 'jump blackGrape',
+				'Text': 'purple Grapes',
+				'Do': 'jump purpleGrape',
 			}
 		}
 	}
@@ -136,13 +136,13 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
-	'greenGrape':[
+	'purple2Grape':[
 		'show background duck with fadeIn',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
-	'blackGrape':[
+	'purpleGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
