@@ -4,7 +4,10 @@ __MODERN WORLD HISTORY__
 __Second Semester Final Project: Visual Narrative__  
 
 Links for reference:
-- [Monogatari Visual Novel Engine](https://monogatari.io/)
+
+### Monotatari Visual Novel Engine
+- [Documentation](https://developers.monogatari.io/documentation)
+- [Main webpage](https://monogatari.io/)
 
 
 ### Notes
