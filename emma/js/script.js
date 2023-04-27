@@ -54,12 +54,12 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
+	'catmeow':'cat-meow.mp3',
 });
 
 // Define the videos used in the game.
 monogatari.assets ('videos', {
-
+	'catvideo' : 'cat.mp4',
 });
 
 //DEFINE THE IMAGES YOU WANT HERE
@@ -132,12 +132,15 @@ monogatari.script ({
 
 	'redGrape':[
 		'show background duck with fadeIn',
+		'show video catvideo background',
 		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'hide video catvideo',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
 		'show background duck with fadeIn',
+		'play sound catmeow',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
