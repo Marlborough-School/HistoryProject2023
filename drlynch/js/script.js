@@ -184,10 +184,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Dr. Lynch
         </p>
 				</center>
 				<br/>
