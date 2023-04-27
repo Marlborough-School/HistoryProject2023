@@ -85,7 +85,6 @@ monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
 		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-        'I am Alana and this is my project',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -184,7 +183,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Erna Gans: Advocate for Holocaust Education</b>
 				<br/>
 				<br/>
         By: The Duck Selling Lemonade at the Lemonade Stand
