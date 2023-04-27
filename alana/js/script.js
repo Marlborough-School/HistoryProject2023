@@ -114,8 +114,8 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
+				'Text': 'Effect of Nazis support on Holocaust Survivors',
+				'Do': 'jump hook',
 			},
 			'2':{
 				'Text': 'Green Grapes',
@@ -129,11 +129,10 @@ monogatari.script ({
 	}
 	],
 
-	'redGrape':[
+	'hook':[
 		'show background duck with fadeIn',
                 'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-                'hide video cat-video',
+		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans who couldn’t stand back and watch, instead Erna became an activist for Holocaust education and put a stop to a march the Neo-Nazi group was planning was her first step.',
 		'jump choiceScreen',
 	],
 
