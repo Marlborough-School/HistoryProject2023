@@ -85,7 +85,7 @@ monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
 		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-        'testing',
+        'Dr. Kessner was here',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
