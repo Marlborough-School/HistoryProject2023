@@ -68,6 +68,16 @@ monogatari.assets ('images', {
 
 });
 
+monogatari.characters ({
+    'y': {
+        name: 'Yay',
+        color: '#00bfff',
+        sprites: {
+					//put images here for the sprites
+        }
+    }
+});
+
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
