@@ -4,17 +4,25 @@ __MODERN WORLD HISTORY__
 __Second Semester Final Project: Visual Narrative__  
 
 
-### Monotatari Visual Novel Engine
+### Software installation
 
-- [Documentation](https://developers.monogatari.io/documentation)
-- [Main webpage](https://monogatari.io/)
+- [Brackets text editor](https://brackets.io/)
+- [Github Desktop](https://desktop.github.com/)
+
+
+### History Project 2021-22
+
+- [2021-22 website](https://marlborough-school.github.io/HistoryProject2022/)
+- [2021-22 repository](https://marlborough-school.github.io/HistoryProject2022/)
+
+
+### Monogatari Visual Novel Engine
+
+- [Monogatari Documentation](https://developers.monogatari.io/documentation)
+- [Monogatari main webpage](https://monogatari.io/)
 
 
 ### Notes
-
-TODO:
-- Atom replacement
-- update instruction doc + readme
 
 [live site (testing)](https://marlborough-school.github.io/HistoryProject2023/)
 
