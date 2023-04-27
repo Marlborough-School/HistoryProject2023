@@ -46,7 +46,7 @@ button:hover {
 /* Main Menu Styling */
 [data-screen="main"] {
 	background-image: url("../assets/scenes/crycat.jpeg");
-	color:black;
+	color:blue;
 }
 
 /* Main Menu Buttons Styling */
@@ -55,7 +55,7 @@ button:hover {
 }
 
 [data-screen="main"] b {
-	font-size: 200%;
+	font-size: 400%;
 }
 
 [data-screen="main"] p {
