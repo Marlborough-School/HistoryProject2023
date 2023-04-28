@@ -109,9 +109,8 @@ monogatari.script ({
 	'noAnswer':[
 		'show background black',
 		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
-		'jump choiceScreen',
-        {'Do':'jump hook',
-        },
+		'jump hook',
+    
 	],
 
 
