@@ -78,7 +78,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
     'march':'skokiemarch.jpg',
-    'rally':'nazirally.jpg',
+    'rally':'nazirally.jpeg',
 });
 
 
@@ -114,24 +114,7 @@ monogatari.script ({
         },
 	],
 
-	'choiceScreen':[
-		'show background black',
-		{'Choice':{
-			'1':{
-				'Text': 'Early Life of Erna Gans/Life Before Activism',
-				'Do': 'jump hook',
-			},
-			'2':{
-				'Text': 'Efforts Toward Education',
-				'Do': 'jump greenGrape',
-			},
-			'3':{
-				'Text': 'What Erna Gans Accopmlished',
-				'Do': 'jump blackGrape',
-			}
-		}
-	}
-	],
+
 
 	'hook':[
 		'show background rally with fadeIn',
