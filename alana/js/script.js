@@ -117,23 +117,16 @@ monogatari.script ({
 				'Text': 'Effect of Nazis support on Holocaust Survivors',
 				'Do': 'jump hook',
 			},
-        }
-    }
-        
-    'choiceScreen':[
-        'show background black',
-        {'Choice':{
-			'1':{
-                'Text': 'Ealry Life',
-				'Do': 'jump ELoption',
 			'2':{
-				'Text': 'Efforts Towards Education',
-				'Do': 'jump ETEoption',
+				'Text': 'Green Grapes',
+				'Do': 'jump greenGrape',
+			},
+			'3':{
+				'Text': 'Black Grapes',
+				'Do': 'jump blackGrape',
 			}
 		}
 	}
-        
-        }
 	],
 
 	'hook':[
@@ -143,16 +136,16 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
-	'ETEoption':[
+	'greenGrape':[
 		'show background duck with fadeIn',
                 'play sound cat-meow',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
-	'ELoption':[
+	'blackGrape':[
 		'show background grape with fadeIn',
-		'growing up in..',
+		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
 	],
 
