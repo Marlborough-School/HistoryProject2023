@@ -87,7 +87,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background black',
-		'Is it true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
+		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
 				'Text': 'True',
