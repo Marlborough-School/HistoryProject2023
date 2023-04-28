@@ -139,10 +139,9 @@ monogatari.script ({
 	}
 	],
 
-    
     'beforeactivism':[
-        'show background black'
-        'erna gans grew up in'
+        'show background black',
+        'erna gans grew up in',
     ],
     
 	'greenGrape':[
