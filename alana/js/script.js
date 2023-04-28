@@ -103,7 +103,7 @@ monogatari.script ({
 	'yesAnswer':[
 		'show background black',
 		'You are correct, support continued for Nazis. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
-		'jump choiceScreen',
+		'jump hook',
 	],
 
 	'noAnswer':[
