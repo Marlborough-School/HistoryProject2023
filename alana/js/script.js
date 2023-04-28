@@ -113,15 +113,38 @@ monogatari.script ({
     
 	],
 
-
-
 	'hook':[
 		'show background rally with fadeIn',
     
-		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans who couldn’t stand back and watch, instead Erna became an activist for Holocaust education and put a stop to a march the Neo-Nazi group was planning was her first step.',
+		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans.',
 		'jump choiceScreen',
 	],
+    
+    	'choiceScreen':[
+		'show background black',
+		{'Choice':{
+			'1':{
+				'Text': 'Early Life of Erna Gans/Life Before Activism',
+				'Do': 'jump beforeActivism',
+			},
+			'2':{
+				'Text': 'Efforts Toward Education',
+				'Do': 'jump greenGrape',
+			},
+			'3':{
+				'Text': 'What Erna Gans Accopmlished',
+				'Do': 'jump blackGrape',
+			}
+		}
+	}
+	],
 
+    
+    'beforeactivism':[
+        'show background black'
+        'erna gans grew up in'
+    ],
+    
 	'greenGrape':[
 		'show background black',
                 'play sound cat-meow',
