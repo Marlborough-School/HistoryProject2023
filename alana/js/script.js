@@ -79,13 +79,14 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
     'march':'skokiemarch.jpg',
     'rally':'nazirally.jpeg',
+    'erna':'ernagans.webp',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
+		'show background black',
 		'Is it true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
@@ -142,6 +143,7 @@ monogatari.script ({
     'beforeActivism':[
         'show background black',
         'erna gans grew up in',
+        'jump coiceScreen',
     ],
     
 	'greenGrape':[
