@@ -78,6 +78,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
     'march':'skokiemarch.jpg',
+    'rally':'nazirally.jpg',
 });
 
 
@@ -109,6 +110,8 @@ monogatari.script ({
 		'show background black',
 		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump choiceScreen',
+        {'Do':'jump hook',
+        },
 	],
 
 	'choiceScreen':[
@@ -131,7 +134,7 @@ monogatari.script ({
 	],
 
 	'hook':[
-		'show background march with fadeIn',
+		'show background rally with fadeIn',
     
 		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans who couldn’t stand back and watch, instead Erna became an activist for Holocaust education and put a stop to a march the Neo-Nazi group was planning was her first step.',
 		'jump choiceScreen',
