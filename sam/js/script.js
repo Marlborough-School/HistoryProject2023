@@ -183,10 +183,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>My Great-Grandpa Zvi's Journey to his Family</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Samantha Abrams
         </p>
 				</center>
 				<br/>
