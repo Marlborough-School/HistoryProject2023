@@ -77,6 +77,7 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    'march':'skokiemarch.jpg',
 });
 
 
@@ -100,29 +101,29 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You are correct, support continued for Nazis. You will now learn about how this support effected survivors of the Holocaust.',
+		'You are correct, support continued for Nazis. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about how this support effected survivors of the Holocaust.',
+		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background black',
 		{'Choice':{
 			'1':{
-				'Text': 'Effect of Nazis support on Holocaust Survivors',
+				'Text': 'Early Life of Erna Gans/Life Before Activism',
 				'Do': 'jump hook',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Efforts Toward Education',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'What Erna Gans Accopmlished',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -130,21 +131,21 @@ monogatari.script ({
 	],
 
 	'hook':[
-		'show background duck with fadeIn',
+		'show background march with fadeIn',
                 'show video cat-video background',
 		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans who couldn’t stand back and watch, instead Erna became an activist for Holocaust education and put a stop to a march the Neo-Nazi group was planning was her first step.',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'show background black',
                 'play sound cat-meow',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+		'show background black',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
 	],
