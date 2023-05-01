@@ -3,8 +3,8 @@
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
 	'Help': {
-		title: 'Help',
-		subtitle: 'Some useful Links',
+		title: 'Nurse Helen Fairchild:',
+		subtitle: 'Hero and Victim of the First Modern War',
 		body: `
 			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
 			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
@@ -184,10 +184,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Dr. Lynch
         </p>
 				</center>
 				<br/>

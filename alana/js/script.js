@@ -77,22 +77,24 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    'march':'skokiemarch.jpg',
+    'rally':'nazirally.jpeg',
+    'erna':'ernagans.webp',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background black',
+		'Is it true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'True',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'False',
 				'Do': 'jump noAnswer'
 			},
 		    },
@@ -101,52 +103,58 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'You are correct, support continued for Nazis. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
+		'jump hook',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
+		'jump hook',
+    
 	],
 
-	'choiceScreen':[
-		'show background duck2 with fadeIn',
+	'hook':[
+		'show background rally with fadeIn',
+    
+		'In 1977, a Neo-Nazi group publically roamed the streets where many Holocaust survivors lived wearing Nazi symbols on their clothing. The representation of Nazi support made Holocaust survivors disgusted and outraged. On of those survivors was a 54-year-old woman named Erna Gans.',
+		'jump choiceScreen',
+	],
+    
+    	'choiceScreen':[
+		'show background black',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
+				'Text': 'Early Life of Erna Gans/Life Before Activism',
+				'Do': 'jump beforeActivism',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Efforts Toward Education',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'What Erna Gans Accopmlished',
 				'Do': 'jump blackGrape',
 			}
 		}
 	}
 	],
 
-	'redGrape':[
-		'show background duck with fadeIn',
-                'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-                'hide video cat-video',
-		'jump choiceScreen',
-	],
-
+    'beforeActivism':[
+        'show background black',
+        'erna gans grew up in',
+        'jump coiceScreen',
+    ],
+    
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'show background black',
                 'play sound cat-meow',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+		'show background black',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
 	],
@@ -183,10 +191,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Erna Gans: Advocate for Holocaust Education</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Alana Laurie
         </p>
 				</center>
 				<br/>
