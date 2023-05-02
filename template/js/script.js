@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
+		'Dr. Kessner was here. ',
         'The quick brown fox jumps over the lazy dog',
         'Dr. Kessner was here',
 		'Example question: Hey bum bum bum got any grapes?',

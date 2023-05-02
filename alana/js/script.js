@@ -142,7 +142,19 @@ monogatari.script ({
 
     'beforeActivism':[
         'show background black',
-        'erna gans grew up in',
+        'Erna grew up speaking German in Bielsko, Poland, a city that was very much influenced by German culture. As a teen Erna worked as a house cleaner where she was able to befriend some of the Germans who she worked for because she spoke the sam language. One day Erna got a call from one of her employers warning her that there was an action day happening soon and told her to coming to his apartment and hide there for the day.',
+        'jump Before2',
+    ],
+    
+    'Before2':[
+        'show background black',
+        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived.',
+        'jump Before3',
+    ],
+    
+    'Before3':[
+        'show background black',
+        'Erna came home that night to the sight of her mother and brother being taken. She motioned for her to leave to protect her but in doing so Erna was left alone and was soon captured and taken to Plaszow concentration camp.',
         'jump choiceScreen',
     ],
     
