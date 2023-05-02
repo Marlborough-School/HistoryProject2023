@@ -94,8 +94,8 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'text 1',
+		'text 2',
 		{'Choice':{
 			'Y':{
 				'Text': 'Yes, I do have grapes',
@@ -193,10 +193,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Emma's Project</b>
+        <b>this is a title </b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Emma
         </p>
 				</center>
 				<br/>
