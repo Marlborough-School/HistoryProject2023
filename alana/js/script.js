@@ -87,7 +87,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background black',
-		'Is it true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
+		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
 				'Text': 'True',
@@ -125,7 +125,7 @@ monogatari.script ({
 		'show background black',
 		{'Choice':{
 			'1':{
-				'Text': 'Early Life of Erna Gans/Life Before Activism',
+				'Text': 'Life Before Activism',
 				'Do': 'jump beforeActivism',
 			},
 			'2':{
@@ -143,7 +143,7 @@ monogatari.script ({
     'beforeActivism':[
         'show background black',
         'erna gans grew up in',
-        'jump coiceScreen',
+        'jump choiceScreen',
     ],
     
 	'greenGrape':[
@@ -171,7 +171,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
+		'show background black with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
 		'Go make your own project now have fun lol',
 		'end'
