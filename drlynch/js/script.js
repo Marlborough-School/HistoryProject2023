@@ -86,14 +86,14 @@ monogatari.script ({
 		'show background duck with fadeIn',
 		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
         'testing',
-		'Example question: Hey bum bum bum got any grapes?',
+		'How many American nurses do you think served in WWI?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Around 2,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'Around 22,000',
 				'Do': 'jump noAnswer'
 			},
 		    },
