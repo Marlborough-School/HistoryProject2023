@@ -71,7 +71,7 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'title photo':'degualle.jpg',
+	'title':'degualle.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
@@ -83,7 +83,7 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background title photo with fadeIn',
+		'show background title with fadeIn',
 		'grace was here. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
