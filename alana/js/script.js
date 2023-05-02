@@ -125,7 +125,7 @@ monogatari.script ({
 		'show background black',
 		{'Choice':{
 			'1':{
-				'Text': 'Early Life of Erna Gans/Life Before Activism',
+				'Text': 'Life Before Activism',
 				'Do': 'jump beforeActivism',
 			},
 			'2':{
