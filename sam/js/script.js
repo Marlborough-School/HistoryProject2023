@@ -65,6 +65,9 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
+    'weddingphoto':'ZviVNaomi.jpg',
+    'singleletter': 'JacksonLetter.jpeg',
+    'kweitsimage':'KweitsImage',
 
 });
 
@@ -77,6 +80,13 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    'lithuaniamap':'USSRMap.jpeg',
+    'window':'Window.jpeg',
+    'certificate':'Certoficate.jpeg',
+    'lettercollection':'Letters.jpeg',
+    'visa':'Visa.jpg',
+    'worldmap':'WorldMap.jpeg'
+    
 });
 
 
