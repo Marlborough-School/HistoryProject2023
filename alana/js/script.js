@@ -143,7 +143,7 @@ monogatari.script ({
     'beforeActivism':[
         'show background black',
         'erna gans grew up in',
-        'jump coiceScreen',
+        'jump choiceScreen',
     ],
     
 	'greenGrape':[
@@ -171,7 +171,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
+		'show background black with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
 		'Go make your own project now have fun lol',
 		'end'
