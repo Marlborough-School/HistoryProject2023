@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	'horn':'car-horn.mp3',
 });
 
 // Define the videos used in the game.
@@ -71,7 +71,7 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
+	'flower':'flower.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
@@ -83,8 +83,8 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
+		'show background flower with fadeIn',
+		'Jeanne was an incredibly adventurous women with an inspiring story. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -140,7 +140,7 @@ monogatari.script ({
 
 	'greenGrape':[
 		'show background duck with fadeIn',
-                'play sound cat-meow',
+                'play sound horn',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
@@ -183,10 +183,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b> Female Spies </b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Hailey Webber
         </p>
 				</center>
 				<br/>
