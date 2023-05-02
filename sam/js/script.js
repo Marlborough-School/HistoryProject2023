@@ -93,54 +93,70 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'sam has changed this. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background worldmap fadeIn',
+		'Trivia Question: Where in the USSR did Germany first invade?',
 		{'Choice':{
-			'Y':{
-				'Text': 'Yes, I do have grapes',
-				'Do': 'jump yesAnswer'
+			'L':{
+				'Text': 'Lithuania',
+				'Do': 'jump rightAnswer'
 			},
-			'N':{
-				'Text': 'No, I do not sell grapes',
-				'Do': 'jump noAnswer'
+			'U':{
+				'Text': 'Ukraine',
+				'Do': 'jump wrongAnswer'
+			},
+            'B':{
+				'Text': 'Belarus',
+				'Do': 'jump wrongAnswer'
+			},
+            'M':{
+				'Text': 'Moldova',
+				'Do': 'jump wrongAnswer'
 			},
 		    },
 	        },
         ],
 
-	'yesAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+	'rightAnswer':[
+		'show background lithuaniamap',
+		'Correct!',
 		'jump choiceScreen',
 	],
 
-	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+	'wrongAnswer':[
+		'show background lithuaniamap',
+		'Incorrect',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background worldmap with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
+				'Text': 'Lithuania',
+				'Do': 'jump Lithuania',
 			},
 			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
+				'Text': 'British Mandate of Palestine',
+				'Do': 'jump Palestine',
 			},
 			'3':{
-				'Text': 'Black Grapes',
-				'Do': 'jump blackGrape',
+				'Text': 'Florida',
+				'Do': 'jump Florida',
+			},
+            '4':{
+				'Text': 'Bombay',
+				'Do': 'jump Bombay',
+			},
+            '5':{
+				'Text': 'Conclusion',
+				'Do': 'jump Conclusion',
 			}
+            
 		}
 	}
 	],
 
-	'redGrape':[
+	'Lithuania':[
 		'show background duck with fadeIn',
                 'show video cat-video background',
 		'Sorry, we have no red grapes! I am sending you back to choose another option.',
@@ -148,17 +164,29 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
-	'greenGrape':[
+	'Palestine':[
 		'show background duck with fadeIn',
                 'play sound cat-meow',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
 
-	'blackGrape':[
+	'Florida':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
+	],
+    'Bombay':[
+		'show background duck with fadeIn',
+                'play sound cat-meow',
+		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'jump choiceScreen',
+	],
+    'Conclusion':[
+		'show background duck with fadeIn',
+                'play sound cat-meow',
+		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'jump choiceScreen',
 	],
 
 	'Ending':[
