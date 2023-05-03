@@ -133,7 +133,7 @@ monogatari.script ({
 		{'Choice':{
 			'1':{
 				'Text': 'Lithuania',
-				'Do': 'jump Lithuania',
+				'Do': 'jump LithuaniaPicture',
 			},
 			'2':{
 				'Text': 'British Mandate of Palestine',
@@ -156,11 +156,17 @@ monogatari.script ({
 	}
 	],
 
-	'Lithuania':[
-		'show background duck with fadeIn',
-                'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-                'hide video cat-video',
+	'LithuaniaPicture':[
+		'show background black with fadeIn',
+		'After invading the USSR on June 22, 1941, the Nazis started executions in Kretinga within a week. Between the first three towns targeted Gargzdai, Palanga, and Kretinga 524 men and two women were murdered, mostly Jews with a few communists and other Nazi targets. 214 of the dead were killed in Kretinga.',
+		'jump LithuaniaWindow',
+	],
+    'LithuaniaWindow':[
+		'show background window with fadeIn',
+		'Since concentration camps had not been built in Lithuania yet, the Nazis executed Jews by firing squad. The method they used, known as the sardine method, was covered up/denied by the Nazi authorities that carried it out.',
+        'Nazi officers forced early Lithuanian victims to dig out massive pits near their towns. The victims were lined up at the edge of the pit ten at a time, backs to the pit, facing the firing squad. All ten were shot at once.',
+        'The bodies fell back into the pit, into their grave, on their own without the Nazis needing to get their hands dirty. If a body fell to the ground it was the job of the next ten victims to push it into the pit.',
+        'The women and children of all three towns were killed a month later.',
 		'jump choiceScreen',
 	],
 
