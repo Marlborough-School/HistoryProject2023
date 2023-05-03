@@ -199,15 +199,13 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
     'Bombay':[
-		'show background duck with fadeIn',
-                'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background visa with fadeIn',
+		'Since the German advance made it unsafe to get to America by going West, Zvi took a much longer route through the Pacific. His journey to join his family took him on a tour of the British Empire. He went from Jaffa (now Tel Aviv) to Egypt, to Trans-Jordan (now Jordan), to Iraq, to India. He took a boat from Bombay (now Mumbai) to California where he caught a train to Jacksonville, Florida. ',
 		'jump choiceScreen',
 	],
     'Conclusion':[
-		'show background duck with fadeIn',
-                'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background black with fadeIn',
+		'Audio of Zvi’s son and daughter-in-law (my grandparents) discussing how Zvi rarely spoke about his family, Kretinga, or life during the war because of the immense survivor’s guilt he carried for being one of the sole survivors of his family and community.',
 		'jump choiceScreen',
 	],
 
