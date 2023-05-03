@@ -137,7 +137,7 @@ monogatari.script ({
 			},
 			'2':{
 				'Text': 'British Mandate of Palestine',
-				'Do': 'jump Palestine',
+				'Do': 'jump Palestine1',
 			},
 			'3':{
 				'Text': 'Florida',
@@ -170,9 +170,19 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
-	'Palestine':[
-		'show background duck with fadeIn',
-                'play sound cat-meow',
+    'Palestine1':[
+		'show background black with fadeIn',
+		'The US refused to open its borders to Jewish refugees seeking to escape the Nazis in Europe so many immigrated to the British Mandate of Palestine.',
+        'Zvi and his brother-in-law came to the British Mandate of Palestine in the early 30s. Despite starting with nothing between them they raised enough money to get Zvi’s sister and nieces (his brother-in-law’s wife and daughters) out of Lithuania.',
+		'jump Palestine2',
+	],
+    'Palestine2':[
+		'show background black with fadeIn',
+		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'jump Palestine3',
+	],
+    'Palestine3':[
+		'show background black with fadeIn',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
