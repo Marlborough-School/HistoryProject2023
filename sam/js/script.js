@@ -177,13 +177,13 @@ monogatari.script ({
 		'jump Palestine2',
 	],
     'Palestine2':[
-		'show background black with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background certificate with fadeIn',
+		'In the British Mandate of Palestine, Zvi met Naomi Becker, a Hebrew-English translator for the British government from America. The two were married on July 7th, 1939.',
 		'jump Palestine3',
 	],
     'Palestine3':[
 		'show background black with fadeIn',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'Since she had previously lived in the United States and her family lived here, Naomi was able to travel back to the United States on the last boat through the Mediterranean Sea and the Atlantic Ocean that the Germans had promised not to harm but Zvi was not able to join her.',
 		'jump choiceScreen',
 	],
 
