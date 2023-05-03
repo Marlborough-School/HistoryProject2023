@@ -93,8 +93,8 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'text 1',
+		'show background grape with fadeIn',
+		'grape',
 		'text 2',
 		{'Choice':{
 			'Y':{
@@ -120,6 +120,8 @@ monogatari.script ({
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
+    
+    
 
 	'choiceScreen':[
 		'show background duck2 with fadeIn',
