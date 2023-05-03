@@ -141,7 +141,7 @@ monogatari.script ({
 			},
 			'3':{
 				'Text': 'Florida',
-				'Do': 'jump Florida',
+				'Do': 'jump Florida1',
 			},
             '4':{
 				'Text': 'Bombay',
@@ -187,10 +187,16 @@ monogatari.script ({
 		'jump choiceScreen',
 	],
 
-	'Florida':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
-		'jump Ending',
+	'Florida1':[
+		'show background lettercollection with fadeIn',
+		'After many months of back-and-forths with Florida Senator Claude Pepper and the Department of Labor, Naomi was finally able to get Zvi a US visa. She proved that her job as a Hebrew teacher at the Jacksonville Jewish Center in Florida was enough to support her family and Zvi was granted a visa.',
+		'jump Florida2',
+	],
+    'Florida2':[
+		'show background black with fadeIn',
+		'This letter shows how far-reaching the effort to get Zvi a visa was. This letter is from Naomi’s employer to the American Consul in Jerusalem. Not only does it mention that Naomi has a steady income, but it also vouches for her character.',
+        'The Rabbi insists that she and her family are “leading citizens in our community, for a number of years active in religious, cultural, and philanthropic projects”. They are trying to convince the American government that Naomi’s family contributes to their society and that gaining another member of it would benefit America so the Consul will give Zvi his visa.',
+		'jump choiceScreen',
 	],
     'Bombay':[
 		'show background duck with fadeIn',
