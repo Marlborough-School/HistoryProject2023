@@ -74,12 +74,7 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+	'black':'solid-grey.jpg',
     'lithuaniamap':'USSRMap.jpeg',
     'window':'Window.jpeg',
     'certificate':'Certificate.jpeg',
