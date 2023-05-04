@@ -80,13 +80,17 @@ monogatari.assets ('scenes', {
     'march':'skokiemarch.jpg',
     'rally':'nazirally.jpeg',
     'erna':'ernagans.webp',
+    'actionday':'actionday',
+    'Nparade':'american-nazi-parade.webp',
+    'NUS':'nazismUS.jpeg',
+    'polandMap':'polandMap.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background black',
+		'show background erna',
 		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
@@ -102,13 +106,13 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'show background black',
+		'show background NUS',
 		'You are correct, support continued for Nazis. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump hook',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background NUS',
 		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump hook',
     
@@ -141,7 +145,7 @@ monogatari.script ({
 	],
 
     'beforeActivism':[
-        'show background black',
+        'show background polandMap',
         'Erna grew up speaking German in Bielsko, Poland, a city that was very much influenced by German culture. As a teen Erna worked as a house cleaner where she was able to befriend some of the Germans who she worked for because she spoke the sam language. One day Erna got a call from one of her employers warning her that there was an action day happening soon and told her to coming to his apartment and hide there for the day.',
         'jump Before2',
     ],
