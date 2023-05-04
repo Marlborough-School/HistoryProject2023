@@ -165,10 +165,22 @@ monogatari.script ({
 	'greenGrape':[
 		'show background black',
                 'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+		'In the US, Erna lived a normal life until 1977 when the National Socialist Party of America (NSPA) announced a white power demonstration. Erna, along with other survivors, took the issue to court to try and get the village officials to deny the NSPA a permit to march. Just a week before the demonstration was planned to happen, the court obtained an injunction banning the NSPA from marching. This was the first time in the 39 years Erna had been in the US that she advocated for Holocaust survivors and it was not the last.',
+		'jump education2',
 	],
 
+    'education2':[
+        'show background black',
+        'In 1981, Erna, along with other Holocaust survivors started the Holocaust Memorial Foundation of Illinois (HMFI). The group’s mission was to educate more people about the horrid events survivors lived through and countless others did not. The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
+        'jump education3',
+    ],
+    
+    'education3':[
+        'show background black',
+        'Erna’s goal was to educate as many people as she could about the Holocaust. Her next step in reaching that goal was creating the Illinois Holocaust Museum and Education Center. The museum was founded in 1981 by the HMIF. It provides education for anyone, the average person who wants to learn, students & educators, and people researching.',
+        'jump choiceScreen',
+    ],
+    
 	'blackGrape':[
 		'show background black',
 		'You found the grapes! Now we will go the end of the project',
