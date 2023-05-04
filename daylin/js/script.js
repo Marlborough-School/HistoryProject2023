@@ -71,21 +71,25 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
+	'map':'map.svg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'firstslide':'slide1.jpg'
+    
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background slide1 with fadeIn',
-		'Chiune sugihara was a japanese diplomat who saved the lives of thousands of jewish refugees during World War II.','He was born on january 1st 1900, into a middle class family on the main island of Honshu, located in rural japan. In 1918, he entered Waseda University and was an english major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background firstslide with fadeIn',
+		'Chiune Sugihara was a japanese diplomat who saved the lives of thousands of jewish refugees during World War II.','He was born on january 1st 1900, into a middle class family on the main island of Honshu, located in rural Japan. In 1918, he entered Waseda University and was an english major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.','After Sugihara graduated from his high school, he joined the Japanese Ministry of Foreign Affairs and was posted to various diplomatic missions around China, the Soviet Union, and Europe. 21 years later, he was appointed as the Japanese Consul in Lithuania',
+        
+        
+		show background map with FadeIn',
+		'It was a challenging time, as the Nazis had already occupied Poland, and Lithuania was vulnerable to being invaded. In addition, many jews were feeling Nazi persecution and seeking refuge in Lithuania. Despite this, most countries, including Japan, had very strict policies that barred Jewish refugees from entering.',
 		{'Choice':{
 			'Y':{
 				'Text': 'Yes, I do have grapes',
@@ -100,13 +104,13 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show background map with FadeIn',
+		'It was a challenging time, as the Nazis had already occupied Poland, and Lithuania was vulnerable to being invaded. In addition, many jews were feeling Nazi persecution and seeking refuge in Lithuania. Despite this, most countries, including Japan, had very strict policies that barred Jewish refugees from entering.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background map',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
