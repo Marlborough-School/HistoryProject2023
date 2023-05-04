@@ -84,7 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background crycat with fadeIn',
-		'Chiune sugihara was a japanese diplomat who saved the lives of thousands of jewish refugees during World War II.',
+		'Chiune sugihara was a japanese diplomat who saved the lives of thousands of jewish refugees during World War II.','He was born on january 1st 1900, into a middle class family on the main island of Honshu, located in rural japan. In 1918, he entered Waseda University and was an english major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -183,7 +183,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Collete Marin-Catherine</b>
+        <b>Chiune Sugihara</b>
 				<br/>
 				<br/>
         By: Daylin Kaplan
