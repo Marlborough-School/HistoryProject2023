@@ -76,7 +76,7 @@ monogatari.assets ('scenes', {
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+	'first slide':'slide1.jpeg',
 });
 
 
