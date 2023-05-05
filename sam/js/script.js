@@ -68,7 +68,10 @@ monogatari.assets ('images', {
     'weddingphoto':'ZviVNaomi.jpg',
     'singleletter': 'JacksonLetter.jpeg',
     'kweitsimage':'KweitsImage.jpeg',
-    'groupshots':'GroupShots.jpeg'
+    'groupshots':'GroupShots.jpeg',
+    'withsister': 'ZvisSister.jpeg',
+    'smallgroup': 'JustZvi.jpeg',
+    'familyphoto':'KretingaFamily.jpeg',
 
 });
 
@@ -154,6 +157,9 @@ monogatari.script ({
 
 	'LithuaniaPicture':[
 		'show background black with fadeIn',
+        'show image familyphoto with fadeIn',
+        'Zvi was born in Kretinga, a tiny town in Lithuania, in 1903.',
+        'hide image familyphoto',
         'show image kweitsimage with fadeIn',
 		'After invading the USSR on June 22, 1941, the Nazis started executions in Kretinga within a week. Between the first three towns targeted Gargzdai, Palanga, and Kretinga 524 men and two women were murdered, mostly Jews with a few communists and other Nazi targets. 214 of the dead were killed in Kretinga.',
         'hide image kweitsimage',
@@ -188,7 +194,12 @@ monogatari.script ({
         'show image groupshots',
 		'The US refused to open its borders to Jewish refugees seeking to escape the Nazis in Europe so many immigrated to the British Mandate of Palestine.',
         'hide image groupshots',
+        'show image smallgroup with fadeIn',
         'Zvi and his brother-in-law came to the British Mandate of Palestine in the early 30s. Despite starting with nothing between them they raised enough money to get Zvi’s sister and nieces (his brother-in-law’s wife and daughters) out of Lithuania.',
+        'hide image smallgroup',
+        'show image withsister with fadeIn',
+        'That was all they were able to do before the advancement of the war made it impossible to get any more members of the Fievishevitz family out.',
+        'hide image withsister',
 		'jump Palestine2',
 	],
     'Palestine2':[
