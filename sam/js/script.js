@@ -67,22 +67,18 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
     'weddingphoto':'ZviVNaomi.jpg',
     'singleletter': 'JacksonLetter.jpeg',
-    'kweitsimage':'KweitsImage',
+    'kweitsimage':'KweitsImage.jpeg',
+    'groupshots':'GroupShots.jpeg'
 
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+	'black':'solid-grey.jpg',
     'lithuaniamap':'USSRMap.jpeg',
     'window':'Window.jpeg',
-    'certificate':'Certoficate.jpeg',
+    'certificate':'Certificate.jpeg',
     'lettercollection':'Letters.jpeg',
     'visa':'Visa.jpg',
     'worldmap':'WorldMap.jpeg'
@@ -158,9 +154,26 @@ monogatari.script ({
 
 	'LithuaniaPicture':[
 		'show background black with fadeIn',
+        'show image kweitsimage with fadeIn',
 		'After invading the USSR on June 22, 1941, the Nazis started executions in Kretinga within a week. Between the first three towns targeted Gargzdai, Palanga, and Kretinga 524 men and two women were murdered, mostly Jews with a few communists and other Nazi targets. 214 of the dead were killed in Kretinga.',
-		'jump LithuaniaWindow',
+        'hide image kweitsimage',
+		'jump LithuaniaChoice',
 	],
+    'LithuaniaChoice':[
+        'show background window with fadeIn',
+         'Windows in the US Holocaust Memorial Museum list all the Jewish communities wiped out by the Holocaust. Kretinga is listed in the far left of the middle row.',
+        {'Choice':{
+            'Back':{
+                'Text':'The next few slides contain somewhat detailed descriptions of violence, click here if you would like to return to the map now.',
+                'Do':'jump choiceScreen',
+            },
+             'Continue':{
+                'Text':'Click here if you would like to contiue learning about Kretinga',
+                'Do':'jump LithuaniaWindow',
+            }
+        }
+        }
+    ],
     'LithuaniaWindow':[
 		'show background window with fadeIn',
 		'Since concentration camps had not been built in Lithuania yet, the Nazis executed Jews by firing squad. The method they used, known as the sardine method, was covered up/denied by the Nazi authorities that carried it out.',
@@ -172,7 +185,9 @@ monogatari.script ({
 
     'Palestine1':[
 		'show background black with fadeIn',
+        'show image groupshots',
 		'The US refused to open its borders to Jewish refugees seeking to escape the Nazis in Europe so many immigrated to the British Mandate of Palestine.',
+        'hide image groupshots',
         'Zvi and his brother-in-law came to the British Mandate of Palestine in the early 30s. Despite starting with nothing between them they raised enough money to get Zvi’s sister and nieces (his brother-in-law’s wife and daughters) out of Lithuania.',
 		'jump Palestine2',
 	],
@@ -183,7 +198,9 @@ monogatari.script ({
 	],
     'Palestine3':[
 		'show background black with fadeIn',
+        'show image weddingphoto',
 		'Since she had previously lived in the United States and her family lived here, Naomi was able to travel back to the United States on the last boat through the Mediterranean Sea and the Atlantic Ocean that the Germans had promised not to harm but Zvi was not able to join her.',
+        'hide image weddingphoto',
 		'jump choiceScreen',
 	],
 
@@ -194,8 +211,10 @@ monogatari.script ({
 	],
     'Florida2':[
 		'show background black with fadeIn',
+        'show image singleletter with fadeIn',
 		'This letter shows how far-reaching the effort to get Zvi a visa was. This letter is from Naomi’s employer to the American Consul in Jerusalem. Not only does it mention that Naomi has a steady income, but it also vouches for her character.',
         'The Rabbi insists that she and her family are “leading citizens in our community, for a number of years active in religious, cultural, and philanthropic projects”. They are trying to convince the American government that Naomi’s family contributes to their society and that gaining another member of it would benefit America so the Consul will give Zvi his visa.',
+        'hide image singleletter',
 		'jump choiceScreen',
 	],
     'Bombay':[
@@ -207,24 +226,27 @@ monogatari.script ({
     'Conclusion':[
 		'show background black with fadeIn',
 		'Audio of Zvi’s son and daughter-in-law (my grandparents) discussing how Zvi rarely spoke about his family, Kretinga, or life during the war because of the immense survivor’s guilt he carried for being one of the sole survivors of his family and community.',
-		'jump choiceScreen',
+		'jump Ending',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show background black with fadeIn',
 		{'Choice':{
 			'Closing':{
-				'Text': 'Conclusion',
+				'Text': 'Finish',
 				'Do': 'jump Closing',
+			},
+            'Back':{
+				'Text': 'Contiue reading',
+				'Do': 'jump choiceScreen',
 			}
 		}
 		}
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'show background black with fadeIn',
+		'Thank you for taking the time to learn about my family history, I hope you learned a lot.',
 		'end'
 	]
 });
