@@ -68,6 +68,7 @@ monogatari.assets ('images', {
     'weddingphoto':'ZviVNaomi.jpg',
     'singleletter': 'JacksonLetter.jpeg',
     'kweitsimage':'KweitsImage.jpeg',
+    'groupshots':'GroupShots.jpeg'
 
 });
 
@@ -184,7 +185,9 @@ monogatari.script ({
 
     'Palestine1':[
 		'show background black with fadeIn',
+        'show image groupshots',
 		'The US refused to open its borders to Jewish refugees seeking to escape the Nazis in Europe so many immigrated to the British Mandate of Palestine.',
+        'hide image groupshots',
         'Zvi and his brother-in-law came to the British Mandate of Palestine in the early 30s. Despite starting with nothing between them they raised enough money to get Zvi’s sister and nieces (his brother-in-law’s wife and daughters) out of Lithuania.',
 		'jump Palestine2',
 	],
