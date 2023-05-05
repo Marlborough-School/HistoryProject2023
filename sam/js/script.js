@@ -84,7 +84,8 @@ monogatari.assets ('scenes', {
     'certificate':'Certificate.jpeg',
     'lettercollection':'Letters.jpeg',
     'visa':'Visa.jpg',
-    'worldmap':'WorldMap.jpeg'
+    'worldmap':'WorldMap.jpeg',
+    'blankmap': 'BlankMap.jpeg',
     
 });
 
@@ -92,7 +93,7 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background worldmap fadeIn',
+		'show background blankmap fadeIn',
 		'Trivia Question: Where in the USSR did Germany first invade?',
 		{'Choice':{
 			'L':{
@@ -131,19 +132,19 @@ monogatari.script ({
 		'show background worldmap with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Lithuania',
+				'Text': '1) Lithuania',
 				'Do': 'jump LithuaniaPicture',
 			},
 			'2':{
-				'Text': 'British Mandate of Palestine',
+				'Text': '2) British Mandate of Palestine',
 				'Do': 'jump Palestine1',
 			},
 			'3':{
-				'Text': 'Florida',
+				'Text': '3) Florida',
 				'Do': 'jump Florida1',
 			},
             '4':{
-				'Text': 'Bombay',
+				'Text': '4) Bombay',
 				'Do': 'jump Bombay',
 			},
             '5':{
@@ -210,7 +211,7 @@ monogatari.script ({
     'Palestine3':[
 		'show background black with fadeIn',
         'show image weddingphoto',
-		'Since she had previously lived in the United States and her family lived here, Naomi was able to travel back to the United States on the last boat through the Mediterranean Sea and the Atlantic Ocean that the Germans had promised not to harm but Zvi was not able to join her.',
+		'Since she had previously lived in the United States and her family lived in Jacksonville, Florida, Naomi was able to travel back to the United States on the last boat through the Mediterranean Sea and the Atlantic Ocean that the Germans had promised not to harm but Zvi was not able to join her.',
         'hide image weddingphoto',
 		'jump choiceScreen',
 	],
@@ -257,6 +258,7 @@ monogatari.script ({
 
 	'Closing':[
 		'show background black with fadeIn',
+        //work sited screenshot
 		'Thank you for taking the time to learn about my family history, I hope you learned a lot.',
 		'end'
 	]
