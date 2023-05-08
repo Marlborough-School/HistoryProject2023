@@ -130,7 +130,7 @@ monogatari.script ({
 			},
 			'2':{
 				'Text': 'Efforts Toward Education',
-				'Do': 'jump greenGrape',
+				'Do': 'jump education',
 			},
 			'3':{
 				'Text': 'What Erna Gans Accopmlished',
