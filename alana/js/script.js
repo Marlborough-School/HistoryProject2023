@@ -178,7 +178,7 @@ monogatari.script ({
 	],
 
     'education3':[
-        'show background black',
+        'show background HMFI',
         'In 1981, Erna, along with other Holocaust survivors started the Holocaust Memorial Foundation of Illinois (HMFI). The group’s mission was to educate more people about the horrid events survivors lived through and countless others did not.',
         'jump education4',
     ],
