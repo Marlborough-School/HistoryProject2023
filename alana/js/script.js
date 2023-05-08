@@ -80,13 +80,17 @@ monogatari.assets ('scenes', {
     'march':'skokiemarch.jpg',
     'rally':'nazirally.jpeg',
     'erna':'ernagans.webp',
+    'actionday':'actionday',
+    'Nparade':'american-nazi-parade.webp',
+    'NUS':'nazismUS.jpeg',
+    'polandMap':'polandMap.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background black',
+		'show background erna',
 		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
@@ -102,13 +106,13 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'show background black',
+		'show background NUS',
 		'You are correct, support continued for Nazis. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump hook',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background NUS',
 		'Although for many it is hard to believe, it is actually true that support continued. You will now learn about a Holocaust survivor named Erna Gans and how these demonstrations effected her.',
 		'jump hook',
     
@@ -141,18 +145,42 @@ monogatari.script ({
 	],
 
     'beforeActivism':[
+        'show background polandMap',
+        'Erna grew up speaking German in Bielsko, Poland, a city that was very much influenced by German culture. As a teen Erna worked as a house cleaner where she was able to befriend some of the Germans who she worked for because she spoke the sam language. One day Erna got a call from one of her employers warning her that there was an action day happening soon and told her to coming to his apartment and hide there for the day.',
+        'jump Before2',
+    ],
+    
+    'Before2':[
         'show background black',
-        'erna gans grew up in',
+        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived.',
+        'jump Before3',
+    ],
+    
+    'Before3':[
+        'show background black',
+        'Erna came home that night to the sight of her mother and brother being taken. She motioned for her to leave to protect her but in doing so Erna was left alone and was soon captured and taken to Plaszow concentration camp.',
         'jump choiceScreen',
     ],
     
 	'greenGrape':[
 		'show background black',
                 'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+		'In the US, Erna lived a normal life until 1977 when the National Socialist Party of America (NSPA) announced a white power demonstration. Erna, along with other survivors, took the issue to court to try and get the village officials to deny the NSPA a permit to march. Just a week before the demonstration was planned to happen, the court obtained an injunction banning the NSPA from marching. This was the first time in the 39 years Erna had been in the US that she advocated for Holocaust survivors and it was not the last.',
+		'jump education2',
 	],
 
+    'education2':[
+        'show background black',
+        'In 1981, Erna, along with other Holocaust survivors started the Holocaust Memorial Foundation of Illinois (HMFI). The group’s mission was to educate more people about the horrid events survivors lived through and countless others did not. The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
+        'jump education3',
+    ],
+    
+    'education3':[
+        'show background black',
+        'Erna’s goal was to educate as many people as she could about the Holocaust. Her next step in reaching that goal was creating the Illinois Holocaust Museum and Education Center. The museum was founded in 1981 by the HMIF. It provides education for anyone, the average person who wants to learn, students & educators, and people researching.',
+        'jump choiceScreen',
+    ],
+    
 	'blackGrape':[
 		'show background black',
 		'You found the grapes! Now we will go the end of the project',

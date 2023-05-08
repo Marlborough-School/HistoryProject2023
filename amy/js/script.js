@@ -71,7 +71,7 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
+	'Kawamoto':'Kawamotophoto.jpeg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
@@ -83,31 +83,36 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background Kawamoto with fadeIn',
+		'Yoshitaka Kawamoto was only 13 years old when a lightning flash destroyed his hometown and took away his loved ones. It was the atomic bombing of Hiroshima, and he never forgot the pain and horror of that day.',
+		'“There were fires in the middle of the clouds. I checked my body…My left arm was pierced by a piece of wood that stuck in my flesh like an arrow…I had no other injuries, but I did not run away. We were taught that it was cowardly to desert ones classmates. So I crawled about the rubble, calling, \'Is there anyone alive?\'” (“What the Boy Saw: A Fire In the Sky” 1)',
+        'How many children do you think died from the Hiroshima bomb?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': '20,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': '10,000',
 				'Do': 'jump noAnswer'
 			},
+        	'X':{
+				'Text': '1,000',
+				'Do': 'jump noAnswer'
 		    },
 	        },
+        },
         ],
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Correct! Between 90,000 and 166,000 people died in Hiroshima. It is difficult to determine exactly how many of these deaths were children, but it is believed that around 20,000 of the total deaths were children under the age of 18.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Between 90,000 and 166,000 people died in Hiroshima. It is difficult to determine exactly how many of these deaths were children, but it is believed that around 20,000 of the total deaths were children under the age of 18.',
 		'jump choiceScreen',
 	],
 
