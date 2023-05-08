@@ -80,6 +80,7 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
+    'HMFI':'HMFI.png',
 });
 
 
@@ -142,7 +143,7 @@ monogatari.script ({
 
     'beforeActivism':[
         'show background polandMap',
-        'Erna grew up speaking German in Bielsko, Poland, a city that was very much influenced by German culture. As a teen Erna worked as a house cleaner where she was able to befriend some of the Germans who she worked for because she spoke the sam language. One day Erna got a call from one of her employers warning her that there was an action day happening soon and told her to coming to his apartment and hide there for the day.',
+        'Erna grew up speaking German in Bielsko, Poland, a city that was very much influenced by German culture. As a teen Erna worked as a house cleaner where she was able to befriend some of the Germans who she worked for because she spoke the same language. One day Erna got a call from one of her employers warning her that there was an action day happening soon and told her to coming to his apartment and hide there for the day.',
         'jump Before2',
     ],
     
@@ -154,7 +155,13 @@ monogatari.script ({
     
     'Before3':[
         'show background actionday',
-        'Erna came home that night to the sight of her mother and brother being taken. She motioned for her to leave to protect her but in doing so Erna was left alone and was soon captured and taken to Plaszow concentration camp.',
+        'Erna came home that night to the sight of her mother and brother being taken. Her mother motioned for her to leave to protect her but in doing so Erna was left alone and was soon captured and taken to Plaszow concentration camp.',
+        'jump before4',
+    ],
+    
+    'before4':[
+       'show background camp',
+        'After three years, while on a death march to another camp, Erna was able to escape Plaszow. After escaping the camp, Erna was able to move to the United States where she lived a quiet life until the NSPA march in 1977.',
         'jump choiceScreen',
     ],
     
