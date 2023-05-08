@@ -71,16 +71,11 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
     'march':'skokiemarch.jpg',
     'rally':'nazirally.jpeg',
     'erna':'ernagans.webp',
-    'actionday':'actionday',
+    'actionday':'actionday.png',
     'Nparade':'american-nazi-parade.webp',
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
@@ -163,7 +158,7 @@ monogatari.script ({
         'jump choiceScreen',
     ],
     
-	'greenGrape':[
+	'education':[
 		'show background NSPA',
 		'In the US, Erna lived a normal life until 1977 when the National Socialist Party of America (NSPA) announced a white power demonstration. Erna, along with other survivors, took the issue to court to try and get the village officials to deny the NSPA a permit to march.',
         'jump education 2',
@@ -182,6 +177,7 @@ monogatari.script ({
     ],
         
     'education4':[
+        'show background balck',
         'The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
         'jump choiceScreen',
     ],
@@ -200,7 +196,7 @@ monogatari.script ({
     
 
 	'Ending':[
-		'show background potatocat with fadeIn',
+		'show background black with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
