@@ -161,7 +161,7 @@ monogatari.script ({
 	'education':[
 		'show background NSPA',
 		'In the US, Erna lived a normal life until 1977 when the National Socialist Party of America (NSPA) announced a white power demonstration. Erna, along with other survivors, took the issue to court to try and get the village officials to deny the NSPA a permit to march.',
-        'jump education 2',
+        'jump education2',
         ],
         
     'education2':[
@@ -190,7 +190,7 @@ monogatari.script ({
     
     'accomplishments2':[
         'show background black',
-        'The museum was founded in 1981 by the HMIF. It provides education for anyone, the average person who wants to learn, students & educators, and people researching.',
+        'The museum was founded in 1981 by the HMIF. It provides education for the average person who wants to learn, students & educators, and people researching.',
         'jump choiceScreen',
     ],
     
