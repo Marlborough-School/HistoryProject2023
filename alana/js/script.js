@@ -65,7 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-'HMFI':'HMFI.png',
+    'HMFI':'HMFI.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -80,6 +80,7 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
+    'HMFI':'HMFI.png',
 });
 
 
