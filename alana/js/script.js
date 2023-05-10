@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    'HMFI':'HMFI.png',
+    'HMIF2':'HMFI2.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -80,7 +81,9 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
-    'HMFI':'HMFI.png',
+    'HMFI':'HMFI',
+    'HMFI2 copy':'HMFI2 copy.png',
+    'plascow':'plascow.avif',
 });
 
 
@@ -160,7 +163,7 @@ monogatari.script ({
     ],
     
     'before4':[
-       'show background camp',
+       'show background plascow',
         'After three years, while on a death march to another camp, Erna was able to escape Plaszow. After escaping the camp, Erna was able to move to the United States where she lived a quiet life until the NSPA march in 1977.',
         'jump choiceScreen',
     ],
@@ -184,7 +187,7 @@ monogatari.script ({
     ],
         
     'education4':[
-        'show background balck',
+        'show background black',
         'The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
         'jump choiceScreen',
     ],
