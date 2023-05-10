@@ -65,13 +65,16 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
+    'Kawamoto':'Kawamotophoto.jpeg',
+    'classroom': 'classroom.jpg',
+    'bomb':'bomb.jpg',
+    'flat':'flat.jpg',
 
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
@@ -83,68 +86,96 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show image Kawamoto with fadeIn',
+		'Yoshitaka Kawamoto was only 13 years old when a lightning flash destroyed his hometown and took away his loved ones. It was the atomic bombing of Hiroshima, and he never forgot the pain and horror of that day.',
+		'“There were fires in the middle of the clouds. I checked my body…My left arm was pierced by a piece of wood that stuck in my flesh like an arrow…I had no other injuries, but I did not run away. We were taught that it was cowardly to desert ones classmates. So I crawled about the rubble, calling, \'Is there anyone alive?\'” (“What the Boy Saw: A Fire In the Sky” 1)',
+        'How many children do you think died from the Hiroshima bomb?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': '20,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': '10,000',
 				'Do': 'jump noAnswer'
 			},
+        	'X':{
+				'Text': '1,000',
+				'Do': 'jump noAnswer'
 		    },
 	        },
+        },
         ],
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'Correct! Between 90,000 and 166,000 people died in Hiroshima. It is difficult to determine exactly how many of these deaths were children, but it is believed that around 20,000 of the total deaths were children under the age of 18.',
+		'jump slide2',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'Between 90,000 and 166,000 people died in Hiroshima. It is difficult to determine exactly how many of these deaths were children, but it is believed that around 20,000 of the total deaths were children under the age of 18.',
+		'jump slide2',
 	],
 
+    'slide2': [
+        'show background black',
+        'Yoshitaka Kawamoto is one of the few survivors of the Hiroshima bomb and has a legacy to share his personal experience with others.',
+        'jump choiceScreen',
+    ],
+    
+    
+    
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+    	'hide image Kawamoto with fadeOut',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
-				'Do': 'jump redGrape',
+				'Text': 'Ordinary life of Kawamoto',
+				'Do': 'jump slide6',
 			},
 			'2':{
-				'Text': 'Green Grapes',
-				'Do': 'jump greenGrape',
+				'Text': 'Hiroshima Bomb',
+				'Do': 'jump slide8',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Ota and the Handbook',
 				'Do': 'jump blackGrape',
 			}
 		}
 	}
 	],
 
-	'redGrape':[
-		'show background duck with fadeIn',
+	'slide6':[
+		'show image classroom center with fadeIn',
+		'Prior to the nuclear bomb, Kawamoto was an ordinary schoolboy living with his mother and younger brother in Ono, 30 kilometers outside of Hiroshima. Every morning in Ono, he followed a routine of waking up at six a.m., putting on his school uniform, and catching a train for Hiroshima where he attended Hiroshima Prefectural First Middle School. On the morning of the bombing, Kawamoto kissed his mother goodbye and headed towards the railway station.',
+		'jump slide7',
+	],
+    
+    'slide7':[
+		'show image classroom center with fadeIn',
                 'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-                'hide video cat-video',
+		'Kawamoto arrived at school at 7:45 a.m. and proceeded to his school schedule with a morning assembly that began in the schoolyard at 8 a.m. During this assembly, students stood in rows and bowed to a photo of the Emperor. That was when Kawamoto saw B-29s flying overhead as he stood in the yard, but soon he was instructed to return to the classrooms where they sat at their desks. When the senior boys ordered the class to begin their meditation, his classmate Fujimoto, who was seated by the window, called out “Look! A B-29!”, which followed with a flash of light.',
+        'hide image classroom with fadeOut',
 		'jump choiceScreen',
-	],
+    ],
 
-	'greenGrape':[
-		'show background duck with fadeIn',
+	'slide8':[
+		'show image bomb with fadeIn',
                 'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+		'At 8:15 a.m. on Aug. 6, 1945, the US Army Air Force dropped atomic bombs on a list of preselected Japanese cities, with the first target being Hiroshima. When the lead bomber Enola Gay arrived in Hiroshima, it created an explosion with a force of over 15,000 tons of TNT, engulfing Hiroshima in flames. 80,000 people were instantly killed, including two-thirds of Kawamoto’s classmates who were sitting at their desks.',
+		'jump slide9',
 	],
-
+    
+  'slide9':[
+        'hide image bomb with fadeOut',
+		'show image flat with fadeIn',
+                'play sound cat-meow',
+		'The nuclear bomb created an explosion that crushed the building as it “flattened like paper-hats”(“What the Boy Saw: A Fire In the Sky” 1).', 
+        'hide image flat with fadeOut',
+        'jump choiceScreen',
+],
+    
 	'blackGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',

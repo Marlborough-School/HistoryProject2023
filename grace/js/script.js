@@ -71,7 +71,7 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
+	'title':'degualle.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
@@ -83,8 +83,8 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
+		'show background title with fadeIn',
+		'grace was here. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -183,7 +183,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>How De Gualle Fought for Freedom</b>
 				<br/>
 				<br/>
         By: The Duck Selling Lemonade at the Lemonade Stand
