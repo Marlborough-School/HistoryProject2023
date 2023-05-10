@@ -66,6 +66,7 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
     'HMFI':'HMFI.png',
+    'HMIF2':'HMFI2.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -81,6 +82,7 @@ monogatari.assets ('scenes', {
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
     'HMFI':'HMFI.png',
+    'HMFI2 copy':'HMFI2 copy.png',
 });
 
 
