@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    'lotus':'lotus.jpg',
+    'lotus_small':'lotus_small.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -103,6 +104,7 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
+                'show image lotus_small',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
