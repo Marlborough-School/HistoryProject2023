@@ -74,8 +74,10 @@ monogatari.assets ('images', {
     'clock': 'clock.png',
     'museum': 'museum.jpg',
     'destruction': 'destruction.jpg',
-    'people': 'people',
+    'people': 'people.png',
     'plane': 'plane.png',
+    'bibliography':'bibliography.png',
+    'imagecredit':'imagecredit.png',
 
 
 });
@@ -185,7 +187,7 @@ monogatari.script ({
 		'show image flat with fadeIn',
 		'The nuclear bomb created an explosion that crushed the building as it “flattened like paper-hats”(“What the Boy Saw: A Fire In the Sky” 1).', 
         'hide image flat with fadeOut',
-        'jump slide10',
+        'jump choiceScreen',
 ],
     
 	'slide10':[
@@ -200,13 +202,47 @@ monogatari.script ({
    'slide12':[
 		'As Kawamoto began his route of escape, there were dead bodies laying on the ground in every direction Kawamoto turned, and the once playful playground turned into a nightmare fuel of injured classmates. On his way to the Kyobashi River to get away from the hypocenter, he “saw a living baby clinging to the breasts of its dead mother…I was so scared.”(“What the Boy Saw” 7). These vivid memories haunted Kawamoto to this day, as he began sharing his story at the Hiroshima Peace Memorial Museum.',
         'hide image people with fadeOut',
-        'jump conclusion',
+        'jump choiceScreenn',
 	],
+    
+    	'choiceScreenn':[
+    	
+		{'Choice':{
+			'1':{
+				'Text': 'Conclusion',
+				'Do': 'jump conclusion',
+			},
+		}
+	}
+	],
+    
 	'conclusion':[
 		'show image museum with fadeIn',
         'The Peace Memorial Museum opened to the public on August 1955 to commemorate the thousands of lives lost and serve as a symbol of everlasting world peace. The museum hopes to appeal to particularly younger children since they hold the responsibility to pass the stories on to future generations.',
+        'Therefore, he turned to storytelling to cope with the tragedy, and the result is one of the most touching and heartbreaking collections. His story is still being shared through the Hiroshima Peace Memorial Museum in hopes of keeping the memory of the atomic bombing alive.',
+        'hide image museum with fadeOut',
+        'jump Bibliography',
 	],
 
+    'Bibliography':[
+		'show image bibliography with fadeIn',
+        'Bibliography',
+        'hide image bibliography with fadeOut',
+        'jump Image',
+	],
+    
+      'Image':[
+		'show image imagecredit with fadeIn',
+        'Image Credits',
+        'hide image bibliography with fadeOut',
+        'jump Audio',
+	],
+    
+     'Audio':[
+		'show image imagecredit with fadeIn',
+        'Audio Credits',
+	],
+    
 	'Closing':[
 		'show background crycat with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
