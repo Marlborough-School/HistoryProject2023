@@ -80,8 +80,13 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
-    'ernadoc':'ernadoc.pdf',
+    'ernadoc':'ernadoc.png',
     'plascow':'plascow.avif',
+    'docu':'docu.png',
+    'museum':'museum.jpeg',
+    'exhibit':'exhibit.jpeg',
+    'educenter':'educenter.jpeg',
+    'hologram':'hologram.jpeg',
 });
 
 
@@ -185,23 +190,34 @@ monogatari.script ({
     ],
         
     'education4':[
-        'show background black',
+        'show background docu',
         'The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
         'jump choiceScreen',
     ],
     
     'accomplishments':[
-        'show background black',
+        'show background museum',
         'Erna’s goal was to educate as many people as she could about the Holocaust. After creating the Holocaust Memorial Foundation of Illinois, her next step in reaching that goal was creating the Illinois Holocaust Museum and Education Center.',
         'jump accomplishments2',
         ],
     
     'accomplishments2':[
-        'show background black',
+        'show background exhibit',
         'The museum was founded in 1981 by the HMIF. It provides education for the average person who wants to learn, students & educators, and people researching.',
-        'jump choiceScreen',
+        'jump accomplishments3',
     ],
     
+    'accomplishments3':[
+        'show background educenter',
+        'The museum has multiple exhibits to learn about historical events, one of which being the “Take a Stand Center” which teaches kids about social justice issues and gives them tools to create positive change.',
+        'jump accomplishments4',
+    ],
+    
+    'accomplishments4':[
+        'show background hologram',
+        'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
+        'jump accomplishments5',
+    ],
 
 	'Ending':[
 		'show background black with fadeIn',
