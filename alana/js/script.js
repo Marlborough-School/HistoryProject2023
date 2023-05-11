@@ -65,8 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-    'HMFI':'HMFI.png',
-    'HMIF2':'HMFI2.png',
+   
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -81,7 +80,7 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
-    'ernaHMFI':'ernaHMFI.pdf',
+    'ernadoc':'ernadoc.pdf',
     'plascow':'plascow.avif',
 });
 
@@ -180,7 +179,7 @@ monogatari.script ({
 	],
 
     'education3':[
-        'show background ernaHMIF',
+        'show background ernadoc',
         'In 1981, Erna, along with other Holocaust survivors started the Holocaust Memorial Foundation of Illinois (HMFI). The group’s mission was to educate more people about the horrid events survivors lived through and countless others did not.',
         'jump education4',
     ],
