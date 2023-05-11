@@ -105,13 +105,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'There were actually around 22,000 American nurses who served during WWI 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
