@@ -87,13 +87,14 @@ monogatari.assets ('scenes', {
     'exhibit':'exhibit.jpeg',
     'educenter':'educenter.jpeg',
     'hologram':'hologram.jpeg',
+    'wallpaper':'wallpaper.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background black',
+		'show background wallpaper',
 		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
@@ -129,7 +130,7 @@ monogatari.script ({
 	],
     
     	'choiceScreen':[
-		'show background black',
+		'show background wallpaper',
 		{'Choice':{
 			'1':{
 				'Text': 'Life Before Activism',
@@ -216,7 +217,7 @@ monogatari.script ({
     'accomplishments4':[
         'show background hologram',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
-        'jump accomplishments5',
+        'jump choiceScreen',
     ],
 
 	'Ending':[
