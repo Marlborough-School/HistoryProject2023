@@ -71,11 +71,11 @@ monogatari.assets ('images', {
     'flat':'flat.jpg',
     'cloud': 'cloud.jpg',
     'before': 'before.jpg',
-    'clock': 'clock',
+    'clock': 'clock.png',
     'museum': 'museum.jpg',
     'destruction': 'destruction.jpg',
     'people': 'people',
-    'plane': 'plane',
+    'plane': 'plane.png',
 
 
 });
@@ -129,14 +129,16 @@ monogatari.script ({
     'slide2': [
         'show image bomb with fadeIn',
         'Yoshitaka Kawamoto is one of the few survivors of the Hiroshima bomb and has a legacy to share his personal experience with others.',
+         'hide image destruction with fadeOut',
+        'hide image bomb with fadeOut',
+        
         'jump choiceScreen',
     ],
     
     
     
 	'choiceScreen':[
-    	 'hide image destruction with fadeOut',
-        'hide image bomb with fadeOut',
+    	
 		{'Choice':{
 			'1':{
 				'Text': 'Ordinary life of Kawamoto',
@@ -167,7 +169,7 @@ monogatari.script ({
         'hide image clock with fadeOut',
         'show image classroom center with fadeIn',
         'When the senior boys ordered the class to begin their meditation, his classmate Fujimoto, who was seated by the window, called out “Look! A B-29!”, which followed with a flash of light.',
-        'hide image classroom center with fadeOut',
+        'hide image classroom with fadeOut',
 		'jump choiceScreen',
     ],
 
@@ -175,27 +177,27 @@ monogatari.script ({
 		'show image plane with fadeIn',
                 'play sound cat-meow',
 		'At 8:15 a.m. on Aug. 6, 1945, the US Army Air Force dropped atomic bombs on a list of preselected Japanese cities, with the first target being Hiroshima. When the lead bomber Enola Gay arrived in Hiroshima, it created an explosion with a force of over 15,000 tons of TNT, engulfing Hiroshima in flames. 80,000 people were instantly killed, including two-thirds of Kawamoto’s classmates who were sitting at their desks.',
+        'hide image plane with fadeOut',
 		'jump slide9',
 	],
     
   'slide9':[
-        'hide image plane with fadeOut',
 		'show image flat with fadeIn',
 		'The nuclear bomb created an explosion that crushed the building as it “flattened like paper-hats”(“What the Boy Saw: A Fire In the Sky” 1).', 
         'hide image flat with fadeOut',
-        'jump choiceScreen',
+        'jump slide10',
 ],
     
 	'slide10':[
 		'show image people with fadeIn',
 		'One of the most tragic consequences of this event was witnessing the loss of loved ones. As soon as the chaos began with the bombings, Kawamoto turned to his friend Ota, who was crushed under planks of wood and in extremely injured condition.',
-        'jump slide10',
-  ],      
-    'slide10':[
-		'Ota was a very special friend of Kawamoto, and it pained him to watch him pass away. In his last few moments alive, Ota handed over a student handbook from his pocket in request to give it to his mother. Kawamoto took his request as he admired Ota very much. However, it brought further guilt when he lost the handbook, and “now Ota appears in his dreams” (“What the Boy Saw” 2).',
         'jump slide11',
+  ],      
+    'slide11':[
+		'Ota was a very special friend of Kawamoto, and it pained him to watch him pass away. In his last few moments alive, Ota handed over a student handbook from his pocket in request to give it to his mother. Kawamoto took his request as he admired Ota very much. However, it brought further guilt when he lost the handbook, and “now Ota appears in his dreams” (“What the Boy Saw” 2).',
+        'jump slide12',
 	],
-   'slide11':[
+   'slide12':[
 		'As Kawamoto began his route of escape, there were dead bodies laying on the ground in every direction Kawamoto turned, and the once playful playground turned into a nightmare fuel of injured classmates. On his way to the Kyobashi River to get away from the hypocenter, he “saw a living baby clinging to the breasts of its dead mother…I was so scared.”(“What the Boy Saw” 7). These vivid memories haunted Kawamoto to this day, as he began sharing his story at the Hiroshima Peace Memorial Museum.',
         'hide image people with fadeOut',
         'jump conclusion',
