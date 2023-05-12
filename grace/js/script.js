@@ -85,10 +85,10 @@ monogatari.script ({
 	'Start': [
 		'show background title with fadeIn',
 		'De Gualle was one of the only leaders in history that knew he had to fight back against Nazi Germany at all costs. Even without the support of his government, he put together his own army to continue his mission of preventing futher harm at the hands of Hitlor. ',
-		'What was the early life of De Gualle like?',
+		'What do you think positively impacted his career more significantly?',
 		{'Choice':{
 			'Y':{
-				'Text': 'De Gualle Childhood',
+				'Text': 'Childhood of De Gualle',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
