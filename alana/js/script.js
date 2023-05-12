@@ -65,7 +65,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+   
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -80,14 +80,21 @@ monogatari.assets ('scenes', {
     'NUS':'nazismUS.jpeg',
     'polandMap':'polandMap.jpeg',
     'NSPA':'NSPA.jpeg',
-    'HMFI':'HMFI.png',
+    'ernadoc':'ernadoc.png',
+    'plascow':'plascow.avif',
+    'docu':'docu.png',
+    'museum':'museum.jpeg',
+    'exhibit':'exhibit.jpeg',
+    'educenter':'educenter.jpeg',
+    'hologram':'hologram.jpeg',
+    'wallpaper':'wallpaper.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background black',
+		'show background wallpaper',
 		'Do you think it is true or false that after the Holocaust support for Nazis and the Nazi regime continued?',
 		{'Choice':{
 			'Y':{
@@ -123,7 +130,7 @@ monogatari.script ({
 	],
     
     	'choiceScreen':[
-		'show background black',
+		'show background wallpaper',
 		{'Choice':{
 			'1':{
 				'Text': 'Life Before Activism',
@@ -149,7 +156,7 @@ monogatari.script ({
     
     'Before2':[
         'show background actionday',
-        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived.',
+        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived. In an interview Erna explained,"I didn’t look Jewish so I could do that"',
         'jump Before3',
     ],
     
@@ -160,7 +167,7 @@ monogatari.script ({
     ],
     
     'before4':[
-       'show background camp',
+       'show background plascow',
         'After three years, while on a death march to another camp, Erna was able to escape Plaszow. After escaping the camp, Erna was able to move to the United States where she lived a quiet life until the NSPA march in 1977.',
         'jump choiceScreen',
     ],
@@ -178,29 +185,40 @@ monogatari.script ({
 	],
 
     'education3':[
-        'show background HMIF',
+        'show background ernadoc',
         'In 1981, Erna, along with other Holocaust survivors started the Holocaust Memorial Foundation of Illinois (HMFI). The group’s mission was to educate more people about the horrid events survivors lived through and countless others did not.',
         'jump education4',
     ],
         
     'education4':[
-        'show background balck',
+        'show background docu',
         'The first major action the HMFI did was to get a Holocaust Education Mandate passed to require all public schools to teach a unit about the actions of the Nazis from 1933-1945. In 1990 the mandate was passed making Illinois the first state to require Holocaust Education. Since then, California, New York, New Jersey, and Florida all require schools to teach about the Holocaust.',
         'jump choiceScreen',
     ],
     
     'accomplishments':[
-        'show background black',
+        'show background museum',
         'Erna’s goal was to educate as many people as she could about the Holocaust. After creating the Holocaust Memorial Foundation of Illinois, her next step in reaching that goal was creating the Illinois Holocaust Museum and Education Center.',
         'jump accomplishments2',
         ],
     
     'accomplishments2':[
-        'show background black',
+        'show background exhibit',
         'The museum was founded in 1981 by the HMIF. It provides education for the average person who wants to learn, students & educators, and people researching.',
-        'jump choiceScreen',
+        'jump accomplishments3',
     ],
     
+    'accomplishments3':[
+        'show background educenter',
+        'The museum has multiple exhibits to learn about historical events, one of which being the “Take a Stand Center” which teaches kids about social justice issues and gives them tools to create positive change.',
+        'jump accomplishments4',
+    ],
+    
+    'accomplishments4':[
+        'show background hologram',
+        'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
+        'jump choiceScreen',
+    ],
 
 	'Ending':[
 		'show background black with fadeIn',

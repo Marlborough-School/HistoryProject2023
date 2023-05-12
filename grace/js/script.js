@@ -84,15 +84,15 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background title with fadeIn',
-		'grace was here. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'De Gualle was one of the only leaders in history that knew he had to fight back against Nazi Germany at all costs. Even without the support of his government, he put together his own army to continue his mission of preventing futher harm at the hands of Hitlor. ',
+		'What was the early life of De Gualle like?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'De Gualle Childhood',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'The Early Days of His Military Career',
 				'Do': 'jump noAnswer'
 			},
 		    },
@@ -101,13 +101,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Carles de Gualle was a Frenchman born in 1890, in Lillie, France into a wealthy and growing family of five at the time. His mother came from wealth, and his father was a successful history professor and founder of a school. He was highly influenced by his father who was a successful history professor and founder of a school and his uncle, also named Charles de Gualle, who was a historian and had an interest in military tactics. As he came into a family of scholars, he became highly literate and informed of French history at a young age, and had philosophical discussions about war and war tactics in his home led to his aspirations to have a military career. ',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'He began his military career when he served in World War I, and was promoted to Captain during the Battle of Verdun where he was injured and taken captive. After this event he made tactical suggestions that were turned down by his higher-ups, but that was only the beginning for his military career. In between the first and second world war, Charles de Gaulle continued his education more formally at a military school until France was invaded by Nazi Germany in around 1939, when the second world war had begun.',
 		'jump choiceScreen',
 	],
 
@@ -186,7 +186,7 @@ monogatari.component ('main-screen').template (() => {
         <b>How De Gualle Fought for Freedom</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Grace Plunkett
         </p>
 				</center>
 				<br/>
