@@ -85,7 +85,7 @@ monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
 		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'Did many war poets of World War I generally express disillusionment with the war in their poetry?',
 		{'Choice':{
 			'Y':{
 				'Text': 'Yes, I do have grapes',
