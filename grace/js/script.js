@@ -107,8 +107,7 @@ monogatari.script ({
 
 	'noAnswer':[
 		'show background black',
-		'He began this military career when he served in World War I, and was promoted to Captain during the Battle of Verdun where he was injured and taken captive. After this event he made tactical suggestions that were turned down by his higher-ups, but that was only the beginning for his military career. In between the first and second world war, Charles de Gaulle continued his education more formally at a military school until France was invaded by Nazi Germany in around 1939, when the second world war had begun.
-',
+		'He began this military career when he served in World War I, and was promoted to Captain during the Battle of Verdun where he was injured and taken captive. After this event he made tactical suggestions that were turned down by his higher-ups, but that was only the beginning for his military career. In between the first and second world war, Charles de Gaulle continued his education more formally at a military school until France was invaded by Nazi Germany in around 1939, when the second world war had begun.',
 		'jump choiceScreen',
 	],
 
@@ -187,7 +186,7 @@ monogatari.component ('main-screen').template (() => {
         <b>How De Gualle Fought for Freedom</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Grace Plunkett
         </p>
 				</center>
 				<br/>
