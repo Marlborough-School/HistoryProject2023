@@ -59,7 +59,7 @@ monogatari.assets ('sounds', {
 
 // Define the videos used in the game.
 monogatari.assets ('videos', {
-    'cat-video':'cat-2879.mp4',
+    'soldiers':'soldiers.mp4',
 });
 
 //DEFINE THE IMAGES YOU WANT HERE
@@ -133,13 +133,13 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'show background map with FadeIn',
+'show video soldiers background',
 		'Thats correct! Not only was he taken by the Soviets at the end of the war and held for three years with his family, but he also risked consequences due to insubordination as consul in Lithuania. Sughiara ultimately lost his job, having been dismissed from the Japanese Foreign Service, and then had to make a living in other ways.',
 		'jump nextslide',
 	],
 
 	'noAnswer':[
-		'show background map with FadeIn',
+		'show video soldiers background',
 		'Not quite! Not only was he taken by the Soviets at the end of the war and held for three years with his family, but he also risked consequences due to insubordination as consul in Lithuania. Sughiara ultimately lost his job, having been dismissed from the Japanese Foreign Service, and then had to make a living in other ways.',
         'jump nextslide',
         ],
