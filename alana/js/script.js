@@ -156,7 +156,7 @@ monogatari.script ({
     
     'Before2':[
         'show background actionday',
-        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived. In an interview Erna explained,"I didn’t look Jewish so I could do that"',
+        'The next time there was an action day the man whom had helped Erna before was out of town so Erna’s mother told Erna to walk around that day away from the ghetto where they lived. In an interview Erna explained,"I didn’t look Jewish so I could do that".',
         'jump Before3',
     ],
     
