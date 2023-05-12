@@ -84,15 +84,15 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background title with fadeIn',
-		'grace was here. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'De Gualle was one of the only leaders in history that knew he had to fight back against Nazi Germany at all costs. Even without the support of his government, he put together his own army to continue his mission of preventing futher harm at the hands of Hitlor. ',
+		'Example question: What was the childhood of De Gualle like?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Early Life',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'Move On',
 				'Do': 'jump noAnswer'
 			},
 		    },
