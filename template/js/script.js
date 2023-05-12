@@ -184,10 +184,11 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>The Pendant in the Shoe
+Lily Ebert’s Journey Through the Holocaust</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Isabel Konstant
         </p>
 				</center>
 				<br/>
