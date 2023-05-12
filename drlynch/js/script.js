@@ -3,8 +3,8 @@
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
 	'Help': {
-		title: 'Help',
-		subtitle: 'Some useful Links',
+		title: 'Nurse Helen Fairchild:',
+		subtitle: 'Hero and Victim of the First Modern War',
 		body: `
 			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
 			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
@@ -55,6 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
+    'tickingbuzzer':'tickingbuzzer.mp3',
 });
 
 // Define the videos used in the game.
@@ -77,23 +78,25 @@ monogatari.assets ('scenes', {
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    'nursesphoto':'nursesphoto.jpeg',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
+		'show background nursesphoto with fadeIn',
 		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
         'testing',
-		'Example question: Hey bum bum bum got any grapes?',
+		'How many American nurses do you think served in WWI?',
+        'play sound tickingbuzzer',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Around 2,000',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'Around 22,000',
 				'Do': 'jump noAnswer'
 			},
 		    },
@@ -102,13 +105,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'There were actually around 22,000 American nurses who served during WWI 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Correct! There were around 22,000 American nurses who served during WWI, 10,000 of them overseas. Their stories are little-known, but Nelle knew her aunt’s story was important, and spent many years of her life telling it.',
 		'jump choiceScreen',
 	],
 
@@ -141,7 +144,7 @@ monogatari.script ({
 
 	'greenGrape':[
 		'show background duck with fadeIn',
-                'play sound cat-meow',
+                'play sound tickingbuzzer',
 		'Sorry, we have no green grapes! I am sending you back to choose another option.',
 		'jump choiceScreen',
 	],
@@ -184,10 +187,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Nurse Helen Fairchild: Hero and Victim of the First Modern War</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Dr. Lynch
         </p>
 				</center>
 				<br/>
