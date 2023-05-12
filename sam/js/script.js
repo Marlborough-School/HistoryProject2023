@@ -70,7 +70,7 @@ monogatari.assets ('images', {
     'kweitsimage':'KweitsImage.jpeg',
     'groupshots':'GroupShots.png',
     'withsister': 'ZvisSister.jpeg',
-    'smallgroup': 'JustZvi.jpeg',
+    'smallgroup': 'JustZvi.png',
     'familyphoto':'KretingaFamily.jpeg',
 
 });
