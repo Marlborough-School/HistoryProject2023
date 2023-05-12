@@ -55,6 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
+    'hologram2':'hologram - history project.m4a',
 });
 
 // Define the videos used in the game.
@@ -216,6 +217,7 @@ monogatari.script ({
     
     'accomplishments4':[
         'show background hologram',
+        'play sound hologram2',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
         'jump choiceScreen',
     ],
