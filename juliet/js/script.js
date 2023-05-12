@@ -65,34 +65,32 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'owen':'owen portrait.png',
+'child':'child.jpg',
+'teacher':'teacher.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+'white':'white.jpg',	
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Did many war poets of World War I generally express disillusionment with the war in their poetry?',
+        'show background white with fadeIn',
+        'show image owen with fadeIn',
+		'To most of us, Saturday, March 18, 1893, is not a day to remember, nothing more than a random, insignificant date that holds no importance in the grand scheme of things. But, on this seemingly trivial day, a young woman gave birth to a baby boy in Shropshire, England. The little boy was given the name Wilfred Edward Salter Owen, one that would soon belong to one of the greatest British poets in history.',
+		'Did many war poets of World War II generally express disillusionment with the war in their poetry?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Yes, resentment was widespread.',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'No, Owen was one of the few who spoke up.',
 				'Do': 'jump noAnswer'
 			},
 		    },
@@ -101,29 +99,29 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Correct, many poets discussed their disdain for the war and its destruction, as well as its tremendous emotional impact.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Incorrect, many poets discussed their disdain for the war and its destruction, as well as its tremendous emotional impact.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background black with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Early Life',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Battlefield',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Shellshock Recovery',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -131,12 +129,18 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-                'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
-                'hide video cat-video',
-		'jump choiceScreen',
+		'show background black with fadeIn',
+        'show image child with fadeIn',
+		'Although he had been interested in the arts as a child, Owen didn’t begin taking his poetry seriously until around 20 years old. His work was extraordinarily stylistic and demonstrated a unique rhythm, setting him apart from other British poets. Owen developed an exuberant passion for poetry, music, and art, with a desire to pursue a career. But, his father encouraged him to pick a career that ensured a steady income.',
+		'jump earlylife2',
 	],
+    
+    'earlylife2':[
+        'show background black with fadeIn',
+        'show image teacher with fadeIn',
+		'So for the next few years, Owen worked in France as a teacher and developed sympathy as he observed the devastating effects of WWI. His compassion pushed him to enlist in the British Army. By June of 1916, he received a commission as lieutenant of the Manchester Regiment.',
+		'jump choiceScreen',   
+    ],
 
 	'greenGrape':[
 		'show background duck with fadeIn',
@@ -183,10 +187,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>“The Old Lie: It is sweet and fitting to die for one’s country”</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Juliet Maltas
         </p>
 				</center>
 				<br/>
