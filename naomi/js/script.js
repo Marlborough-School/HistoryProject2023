@@ -65,15 +65,16 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+'Baby2':'Baby2.jpeg',
+    'Parents':'Parents.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
-	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
+	//'nickname for the background': 'Parents.jpg',
+	'Baby1':'Baby1.jpg',
+	'Parents':'Parents.jpeg',
+	'Baby2':'Baby2.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
@@ -83,36 +84,37 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background black with fadeIn',
+        'show image Baby2 with fadeIn',
+		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old.',
+		'Question: How many Jewish people perished in the Holocaust?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
-				'Do': 'jump yesAnswer'
+				'Text': '600,000',
+				'Do': 'jump noAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
-				'Do': 'jump noAnswer'
+				'Text': '6 million',
+				'Do': 'Correct! Out of those 6 million people, approximately 1.5 million of them were children. Anita was one of the lucky ones, being out of the 150,000 Jewish children who survived.'
 			},
 		    },
 	        },
         ],
 
 	'yesAnswer':[
-		'show background black',
+		'show background Parents.jpeg',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'This is the wrong answer, but please proceed to learn more ab.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background parents.jpeg with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Red Grapes',
@@ -163,7 +165,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
+		'show background  with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
 		'Go make your own project now have fun lol',
 		'end'
@@ -183,10 +185,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Anita Epstein</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Naomi B. 
         </p>
 				</center>
 				<br/>

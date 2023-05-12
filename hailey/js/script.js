@@ -71,19 +71,20 @@ monogatari.assets ('images', {
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'flower':'flower.jpg',
+	'spy':'Jeannie Rousseau.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    '__':'__',
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background flower with fadeIn',
+		'show background spy with fadeIn',
 		'Jeanne was an incredibly adventurous women with an inspiring story. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
