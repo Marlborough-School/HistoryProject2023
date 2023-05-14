@@ -68,9 +68,9 @@ monogatari.assets ('images', {
     'weddingphoto':'ZviVNaomi.jpg',
     'singleletter': 'JacksonLetter.jpeg',
     'kweitsimage':'KweitsImage.jpeg',
-    'groupshots':'GroupShots.jpeg',
-    'withsister': 'ZvisSister.jpeg',
-    'smallgroup': 'JustZvi.jpeg',
+    'groupshots':'GroupShots.png',
+    'withsister': 'ZvisSister.png',
+    'smallgroup': 'JustZvi.png',
     'familyphoto':'KretingaFamily.jpeg',
 
 });
