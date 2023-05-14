@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	'planee':'plane.mp3',
 });
 
 // Define the videos used in the game.
@@ -177,7 +177,7 @@ monogatari.script ({
 
 	'slide8':[
 		'show image plane with fadeIn',
-                'play sound cat-meow',
+                'play sound [planee]',
 		'At 8:15 a.m. on Aug. 6, 1945, the US Army Air Force dropped atomic bombs on a list of preselected Japanese cities, with the first target being Hiroshima. When the lead bomber Enola Gay arrived in Hiroshima, it created an explosion with a force of over 15,000 tons of TNT, engulfing Hiroshima in flames. 80,000 people were instantly killed, including two-thirds of Kawamoto’s classmates who were sitting at their desks.',
         'hide image plane with fadeOut',
 		'jump slide9',
@@ -239,7 +239,7 @@ monogatari.script ({
 	],
     
      'Audio':[
-		'show image imagecredit with fadeIn',
+		'show image audio with fadeIn',
         'Audio Credits',
 	],
     
