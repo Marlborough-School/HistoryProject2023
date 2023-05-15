@@ -68,6 +68,14 @@ monogatari.assets ('images', {
     'LILY1':'LILY1.jpeg',
 	'LILY2':'LILY2.jpeg',
     'LILY3':'LILY3.png',
+    'LILY4':'LILY4.jpeg',
+    'LILY5':'LILY5.jpeg',
+    'LILY6':'LILY6.jpeg',
+    'LILY7':'LILY7.webp',
+    'LILY8':'LILY8.jpeg',
+    'LILY9':'LILY9.webp',
+    'LILY10':'LILY10.jpeg',
+    'LILY11':'LILY11.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -92,10 +100,19 @@ monogatari.script ({
         'show background black with fadeIn',
         'show image LILY3 with fadeIn',
         'Little did she know, it would become one of her most valuable possessions and a symbol of her resilience and determination throughout the holocaust.',
+        'hide image LILY3',
+        'show background black with fadeIn',
+        'show image LILY4 with fadeIn',
         'When the Nazis invaded Hungary, they confiscated all valuables and property, especially jewelry or items made of gold. Lily’s younger brother was aware of this, so he hid the pendant in the sole of his mother’s shoe to preserve Lily’s gift.',
+        'hide image LILY4',
+        'show background black with fadeIn',
+        'show image LILY5 with fadeIn',
         'In July 1944, when Ebert was 20, she was deported from her town of Bonyhad, Hungary, and was crammed into a dark and airless cattle truck to Auschwitz, one of the many Nazi-controlled concentration camps. The small pendant took the journey with them in the sole of Lily’s mother’s shoe. Both mother and daughter wore the same size shoe, and knowing the pendant was inside the sole, Lily’s mother asked to switch shoes with her.',
        
-		'Example question: How many people were sent to Auschswitz during its 5 years of operation?',
+        'hide image LILY5',
+        'show background black with fadeIn',
+        'show image LILY6 with fadeIn',
+		'How many people were sent to Auschswitz during its 5 years of operation?',
 		{'Choice':{
 			'Y':{
 				'Text': '1.3 million people',
@@ -120,9 +137,12 @@ monogatari.script ({
 		'Incorrect! Surprisingly, there were way more than 900,000 people sent to Auschwitz. It is estimated that 1.3 million people were sent to the camp complex in occupied Poland. ',
 		'jump choiceScreen',
 	],
+    
 
+    
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+        'hide image LILY6',
+		'show image LILY8 with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'Inside the gates of Auschwitz',
@@ -141,10 +161,19 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
+        'hide image LILY8',
+        'show background black with fadeIn',
+		'show image LILY9 with fadeIn',
 		'When they arrived at the camp, there was a man with a stick in his hand. With a single flick of his wrist, he motioned left or right, deciding the fate of the line of people in front of him. The people sent to the left were taken to the gas chambers or the crematorium.',
+        'hide image LILY9',
+        'show background black with fadeIn',
+		'show image LILY10 with fadeIn',
         'Lily and her two sisters, Renee and Piri, were motioned to move to the right while her mother, brother, and Sister Berta were signaled to move to the left. That was the last time Lily saw her mother. Later on at the camp, the Nazi’s ordered Lily to shower. When she came out of the shower, her clothes were gone; only her shoes remained.',
+         'hide image LILY10',
+        'show background black with fadeIn',
+		'show image LILY11 with fadeIn',
         'The concentration camp looked like a large factory. Lily was confused as to what it might be as she saw a fire appear from out of the chimneys and smelled a terrible stench. After asking around, she soon realized that it was not a factory, but the smell of Lilys parents dead bodies burning, along with the others who had been sent down the path to the left.',
+        'hide image LILY11',
         
 		'jump choiceScreen',
 	],
