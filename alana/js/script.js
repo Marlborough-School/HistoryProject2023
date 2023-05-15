@@ -55,7 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
-    'hologram2':'hologram - history project.m4a',
+    'hologram2':'hologramproject.m4a',
 });
 
 // Define the videos used in the game.
