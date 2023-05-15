@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+ 'war':'war.m4a',
 });
 
 // Define the voice files used in the game.
@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	
 });
 
 // Define the videos used in the game.
@@ -68,6 +68,8 @@ monogatari.assets ('images', {
 'owen':'owen portrait.png',
 'child':'child.jpg',
 'teacher':'teacher.png',
+'dulce':'dulce.png'
+    ''
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -143,12 +145,20 @@ monogatari.script ({
     ],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
-                'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
-		'jump choiceScreen',
+		'show background black with fadeIn',
+		'Owen kept contact with his mother through an exchange of letters, initially expressing pride, describing a “fine heroic feeling about being in France” (Owen, Poetry Foundation.), but that quickly went downhill as his service became increasingly perilous.',
+		'jump battlefield2',
 	],
 
+    'battlefield2':[
+		'show background black with fadeIn',
+         'show image dulce with fadeIn',
+		'Regardless of his decision to ignore a career in poetry, he continued to write, composing graphic scenes and feelings with his words. In 1917, his men were attacked with poison gas, inspiring one of his most famous poems, “Dulce et Decorum Est”. Its effect to spark an emotional reaction in the reader is unlike anything the world had seen at this time.',
+		'jump choiceScreen',
+        
+    ],
+
+        
 	'blackGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
