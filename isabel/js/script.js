@@ -76,6 +76,8 @@ monogatari.assets ('images', {
     'LILY9':'LILY9.webp',
     'LILY10':'LILY10.jpeg',
     'LILY11':'LILY11.jpeg',
+    'LILY12':'LILY12.png',
+    'LILY13':'LILY13.webp',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -179,9 +181,14 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'hide image LILY8',
+        'show background black with fadeIn',
+        'show image LILY12 with fadeIn',
         
 		'After learning that her mother had passed, not only did she feel as if the pendant was her only connection to her mother, but she felt as if it was her duty to keep the pendant safe. As her shoes wore out due to her time at Auschwitz, she started to hide the pendant in her daily ration of bread.',
+        'hide image LILY12',
+        'show background black with fadeIn',
+        'show image LILY13 with fadeIn',
         'After about four months in Auschwitz, the sisters were transferred to an ammunition factory near Leipzig. In 1945, allied forces liberated Leipzig, and Lily and her sisters moved to Switzerland. Lily wore the pendant everyday in remembrance of her mother and the rest of her family. Soon after, she got married and had children.',
 		'jump choiceScreen',
 	],
