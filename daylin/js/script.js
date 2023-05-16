@@ -66,7 +66,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    'bib': 'bib.png',
+    'imagecred': 'imagecred.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -88,9 +89,7 @@ monogatari.assets ('scenes', {
     'colony': 'colony.png',
     'visa': 'visa.jpg',
     'yadvashem': 'yadvashem.jpg',
-    'statue': 'statue.jpg',
-    'bib': 'bib.png',
-    'imagecred': 'imagecred.png', 
+    'statue': 'statue.jpg', 
     'filler': 'filler.jpg',
     'consulate': 'consulate.jpg',
     'chuine': 'chuine.jpg',
@@ -185,7 +184,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background yadvashem with fadeIn','In the period preceding his passing, Sugihara, the former Japanese consul in Lithuania, was recognized by Yad Vashem, the Holocaust Martyrs and heros Remembrance Authority in Israel, as Righteous Among the Nations for his assistance to refugees during World War II. The title was bestowed upon him by Yad Vashem in 1984, and a ceremony was held in Jerusalem in January 1985 to honor his contributions.', 'show background statue with FadeIn', 'Sugihara’s wartime experience demonstrates that the courage of one individual who follows their moral compass can make an incredible difference.','His actions alone saved the lives of so many.','Trusting ones own judgment of right and wrong at times is required when the law or government sanctifies something that is unjust.','show background bib with FadeIn','bibliography', 'show background imagecred with FadeIn', 'image credits', 'jump choiceScreen', 
+		'show background yadvashem with fadeIn','In the period preceding his passing, Sugihara, the former Japanese consul in Lithuania, was recognized by Yad Vashem, the Holocaust Martyrs and heros Remembrance Authority in Israel, as Righteous Among the Nations for his assistance to refugees during World War II. The title was bestowed upon him by Yad Vashem in 1984, and a ceremony was held in Jerusalem in January 1985 to honor his contributions.', 'show background statue with FadeIn', 'Sugihara’s wartime experience demonstrates that the courage of one individual who follows their moral compass can make an incredible difference.','His actions alone saved the lives of so many.','Trusting ones own judgment of right and wrong at times is required when the law or government sanctifies something that is unjust.','show background black with FadeIn','show image bib with FadeIn','Bibliography','hide image bib', 'show background black with FadeIn', 'show background black with FadeIn','show image imagecred with FadeIn', 'Image Credits', 'hide image imagecred', 'end', 
 	]
 });
 
@@ -202,7 +201,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Chiune Sugihara</b>
+        <b>A Silent Hero: Chiune Sugihara and the Power of Compassion</b>
 				<br/>
 				<br/>
         By: Daylin Kaplan
