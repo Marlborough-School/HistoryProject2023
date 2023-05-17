@@ -43,6 +43,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
+'song':'song.mp3',
 
 });
 
@@ -53,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	 'war':'war.m4a',
+'war':'war.mp3',
 });
 
 // Define the videos used in the game.
@@ -96,6 +97,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
         'show background black with fadeIn',
+        'play music song with loop with volume 30',
         'show image owen with fadeIn',
 		'To most of us, Saturday, March 18, 1893, is not a day to remember, nothing more than a random, insignificant date that holds no importance in the grand scheme of things. But, on this seemingly trivial day, a young woman gave birth to a baby boy in Shropshire, England. The little boy was given the name Wilfred Edward Salter Owen, one that would soon belong to one of the greatest British poets in history.',
 		'Did many war poets of World War II generally express disillusionment with the war in their poetry?',
@@ -170,6 +172,7 @@ monogatari.script ({
 	'greenGrape':[
 		'show background black with fadeIn',
          'show image letter with fadeIn',
+         'play sound war with volume 50',
 		'Owen kept contact with his mother through an exchange of letters, initially expressing pride, describing a “fine heroic feeling about being in France” (Owen, Poetry Foundation.), but that quickly went downhill as his service became increasingly perilous.',
          'hide image letter with fadeOut',
 		'jump battlefield2',
@@ -214,6 +217,7 @@ monogatari.script ({
         'show image hospital with fadeIn',
          'Owen was hospitalized several more times for severe headaches and ultimately diagnosed with shell shock. He was sent for treatment at Craiglockheart War Hospital, where he made acquaintance with another patient, Siegfried Sassoon, an esteemed English poet Owen would grow to deeply admire and look up to.',
          'hide image hospital with fadeOut',
+         'stop sound war',
         'jump choiceScreen',
     
     ],

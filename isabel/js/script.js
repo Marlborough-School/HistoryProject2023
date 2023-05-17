@@ -60,6 +60,8 @@ monogatari.assets ('sounds', {
 // Define the videos used in the game.
 monogatari.assets ('videos', {
     'cat-video':'cat-2879.mp4',
+    'LILYVIDEO':'LILYVIDEO.mov',
+    
 });
 
 //DEFINE THE IMAGES YOU WANT HERE
@@ -76,6 +78,10 @@ monogatari.assets ('images', {
     'LILY9':'LILY9.webp',
     'LILY10':'LILY10.jpeg',
     'LILY11':'LILY11.jpeg',
+    'LILY12':'LILY12.png',
+    'LILY13':'LILY13.webp',
+    'LILY14':'LILY14.jpeg',
+    'LILY15':'LILY15.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -179,17 +185,29 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'hide image LILY8',
+        'show background black with fadeIn',
+        'show image LILY12 with fadeIn',
         
 		'After learning that her mother had passed, not only did she feel as if the pendant was her only connection to her mother, but she felt as if it was her duty to keep the pendant safe. As her shoes wore out due to her time at Auschwitz, she started to hide the pendant in her daily ration of bread.',
+        'hide image LILY12',
+        'show background black with fadeIn',
+        'show image LILY13 with fadeIn',
         'After about four months in Auschwitz, the sisters were transferred to an ammunition factory near Leipzig. In 1945, allied forces liberated Leipzig, and Lily and her sisters moved to Switzerland. Lily wore the pendant everyday in remembrance of her mother and the rest of her family. Soon after, she got married and had children.',
+        'hide image LILY13',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+        'hide image LILY8',
+		'show background black with fadeIn',
+        'show image LILY14 with fadeIn',
 		'Lily has become one of the oldest influencers on Tik Tok. She makes videos talking about how she survived the holocaust, answers questions people may have, and shares her personal stories.',
+        'hide image LILY14',
+        'show background black with fadeIn',
+        'show image LILY15 with fadeIn',
         'Sharing her story to Tik Tok was Lilys mission and purpose. As antisemitism becomes a rising problem again in the United States, Ebert’s tik tok videos share important messages in an attempt to “save the world” from anti semitic views and negative stereotypes. In an interview, Ebert says “I was really not sure that I would stay alive. It is a miracle that I am here. But I promised myself, however long I will be alive, and whatever I will do in life, one thing is sure, I will tell my story,”',
+       
         'In one of her tik toks, she shows her pendant, stating that it was the only piece of gold that survived auschwitz.',
       
 		'jump Ending',
