@@ -326,10 +326,10 @@ monogatari.script ({
         'Works Cited.',
         'hide image sources with fadeOut',
         'show image sources2 with fadeIn',
-        'Works Cited continued',
+        'Image credits.',
          'hide image sources2 with fadeOut',
         'show image sources3 with fadeIn',
-        'Works Cited continued',
+        'Image credits continued.',
         'hide image sources3 with fadeOut',
         'end'
 	],
