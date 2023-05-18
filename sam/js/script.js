@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	'gaps':'StoryGaps.mp3',
 });
 
 // Define the videos used in the game.
@@ -72,6 +72,7 @@ monogatari.assets ('images', {
     'withsister': 'ZvisSister.png',
     'smallgroup': 'JustZvi.png',
     'familyphoto':'KretingaFamily.jpeg',
+    'workcited': 'WorkCited.jpg',
 
 });
 
@@ -237,10 +238,14 @@ monogatari.script ({
 	],
     'Conclusion':[
 		'show background black with fadeIn',
-		'Audio of Zvi’s son and daughter-in-law (my grandparents) discussing how Zvi rarely spoke about his family, Kretinga, or life during the war because of the immense survivor’s guilt he carried for being one of the sole survivors of his family and community.',
-		'jump Ending',
-	],
-
+        'play sound gaps',
+        
+		'[conclusion words about how the story is incomplete and has gaps. Zvi didnt talk about it and the information out there is sparse]',
+        'sample text',
+        'jump Ending'
+        
+    ],
+    
 	'Ending':[
 		'show background black with fadeIn',
 		{'Choice':{
@@ -258,7 +263,7 @@ monogatari.script ({
 
 	'Closing':[
 		'show background black with fadeIn',
-        //work sited screenshot
+        'show image workcited',
 		'Thank you for taking the time to learn about my family history, I hope you learned a lot.',
 		'end'
 	]
