@@ -55,6 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
+    'warmusic': 'warmusic.mp3',
 });
 
 // Define the videos used in the game.
@@ -65,7 +66,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    'bib': 'bib.png',
+    'imagecred': 'imagecred.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -79,30 +81,32 @@ monogatari.assets ('scenes', {
 	'firstslide':'slide1.jpg',
     'waseda':'waseda.jpg', 
     'train': 'train.jpg',
-    'desk': 'desk.jpg',
+    'atdesk': 'atdesk.jpg',
     'underground': 'underground.jpg',
     'gulag': 'gulag.jpg',
     'map': 'map.svg',
     'group': 'group.jpg',
-    'colony': 'colony',
+    'colony': 'colony.png',
     'visa': 'visa.jpg',
     'yadvashem': 'yadvashem.jpg',
-    'statue': 'statue.jpg',
-    
+    'statue': 'statue.jpg', 
+    'filler': 'filler.jpg',
+    'consulate': 'consulate.jpg',
+    'chuine': 'chuine.jpg',
 });
 
 
 //
 monogatari.script ({
 	'Start': ['show background firstslide with fadeIn',
-		'Chiune Sugihara was a Japanese diplomat who saved the lives of thousands of Jewish refugees during World War II.','During the summer of 1940, when Jewish refugees came to him from occupied Poland with forged visas in America, Sugihara became an active part of Nazi resistance by helping facilitate the escape of Jewish people from war-ravaged Europe. He granted more than 2,000 10-day transit visas through Japan and even gave visas to refugees with no travel papers at all before closing his consulate.','As a result, he came to be recognized as  “Righteous Among the Nations” for his aid to refugees in Lithuania during the Nazi regime', 'show background waseda with FadeIn',
-		'Sugihara was born on January 1st, 1900 into a middle-class Japanese family that lived in a rural area in Japan. In 1918, he entered Waseda University and was an English major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.', 'show background train with FadeIn', 'Later, Sugihara graduated from Japan’s training center for experts on the Soviet Union and he not only became fluent in Russian, but also went on to serve as the Japanese director of the Foreign Ministry in Manchukuo, where he negotiated the purchase of the North Manchurian railroad from the Soviet Union in 1932.', 'show background desk with FadeIn', 'Subsequently, Sugihara was posted to various diplomatic missions around China, the Soviet Union, and Europe and finally, 21 years later, he was appointed as the Japanese Consul in Lithuania in the capital city of Kovno, where he was ordered to provide Japan with intelligence on Soviet and German troop movements in the Baltic region.',
+		'Chiune Sugihara was a Japanese diplomat who saved the lives of thousands of Jewish refugees during World War II.','During the summer of 1940, when Jewish refugees came to him from occupied Poland with forged visas in America, Sugihara became an active part of Nazi resistance by helping facilitate the escape of Jewish people from war-ravaged Europe. He granted more than 2,000 10-day transit visas through Japan and even gave visas to refugees with no travel papers at all before closing his consulate.','As a result, he came to be recognized as  “Righteous Among the Nations” for his aid to refugees in Lithuania during the Nazi regime.', 'show background waseda with FadeIn',
+		'Sugihara was born on January 1st, 1900 into a middle-class Japanese family that lived in a rural area in Japan. In 1918, he entered Waseda University and was an English major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.', 'show background train with FadeIn', 'Later, Sugihara graduated from Japan’s training center for experts on the Soviet Union and he not only became fluent in Russian, but also went on to serve as the Japanese director of the Foreign Ministry in Manchukuo, where he negotiated the purchase of the North Manchurian railroad from the Soviet Union in 1932.', 'show background atdesk with FadeIn', 'Subsequently, Sugihara was posted to various diplomatic missions around China, the Soviet Union, and Europe and finally, 21 years later, he was appointed as the Japanese Consul in Lithuania in the capital city of Kovno, where he was ordered to provide Japan with intelligence on Soviet and German troop movements in the Baltic region.',
         
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background filler with fadeIn',
 		{'Choice':{
 			'1':{
 				'Text': 'early life',
@@ -122,12 +126,12 @@ monogatari.script ({
 
 	'redGrape':[
 		'show background firstslide with fadeIn',
-		'Chiune Sugihara was a Japanese diplomat who saved the lives of thousands of Jewish refugees during World War II.','During the summer of 1940, when Jewish refugees came to him from occupied Poland with forged visas in America, Sugihara became an active part of Nazi resistance by helping facilitate the escape of Jewish people from war-ravaged Europe. He granted more than 2,000 10-day transit visas through Japan and even gave visas to refugees with no travel papers at all before closing his consulate.','As a result, he came to be recognized as  “Righteous Among the Nations” for his aid to refugees in Lithuania during the Nazi regime', 'show background waseda with FadeIn',
-		'Sugihara was born on January 1st, 1900 into a middle-class Japanese family that lived in a rural area in Japan. In 1918, he entered Waseda University and was an English major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.', 'show background train with FadeIn', 'Later, Sugihara graduated from Japan’s training center for experts on the Soviet Union and he not only became fluent in Russian, but also went on to serve as the Japanese director of the Foreign Ministry in Manchukuo, where he negotiated the purchase of the North Manchurian railroad from the Soviet Union in 1932.', 'show background desk with FadeIn', 'Subsequently, Sugihara was posted to various diplomatic missions around China, the Soviet Union, and Europe and finally, 21 years later, he was appointed as the Japanese Consul in Lithuania in the capital city of Kovno, where he was ordered to provide Japan with intelligence on Soviet and German troop movements in the Baltic region.','jump choiceScreen',
+		'Chiune Sugihara was a Japanese diplomat who saved the lives of thousands of Jewish refugees during World War II.','During the summer of 1940, when Jewish refugees came to him from occupied Poland with forged visas in America, Sugihara became an active part of Nazi resistance by helping facilitate the escape of Jewish people from war-ravaged Europe. He granted more than 2,000 10-day transit visas through Japan and even gave visas to refugees with no travel papers at all before closing his consulate.','As a result, he came to be recognized as  “Righteous Among the Nations” for his aid to refugees in Lithuania during the Nazi regime.', 'show background waseda with FadeIn',
+		'Sugihara was born on January 1st, 1900 into a middle-class Japanese family that lived in a rural area in Japan. In 1918, he entered Waseda University and was an English major. His father wanted him to become a physician, but he intentionally failed the entrance exam by writing only his name on the paper.', 'show background train with FadeIn', 'Later, Sugihara graduated from Japan’s training center for experts on the Soviet Union and he not only became fluent in Russian, but also went on to serve as the Japanese director of the Foreign Ministry in Manchukuo, where he negotiated the purchase of the North Manchurian railroad from the Soviet Union in 1932.', 'show background atdesk with FadeIn', 'Subsequently, Sugihara was posted to various diplomatic missions around China, the Soviet Union, and Europe and finally, 21 years later, he was appointed as the Japanese Consul in Lithuania in the capital city of Kovno, where he was ordered to provide Japan with intelligence on Soviet and German troop movements in the Baltic region.','jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background underground with FadeIn', 'At the time, Nazis already occupied Poland, with the rising tides of war spreading through Europe. With aggression in the East already having commenced, Lithuania was particularly vulnerable to invasion by Nazi forces, who made their expansionist intentions known.', 'During this period, Sugihara began exchanging information with members of the Polish underground in Lithuania, beginning to issue them with visas for transit through Japan in 1940, establishing himself as an ally among those seeking refuge or working on resistance.',
+		'show background underground with FadeIn', 'At the time, Nazis already occupied Poland, with the rising tides of war spreading through Europe. With aggression in the East already having commenced, Lithuania was particularly vulnerable to invasion by Nazi forces, who made their expansionist intentions known.', 'During this period, Sugihara began exchanging information with members of the Polish underground in Lithuania, beginning to issue them with visas for transit through Japan in 1940, establishing himself as an ally among those seeking refuge or working on resistance.', 
 		'Example question: Did Sugihara face any consequences for his actions after the war?',
 		{'Choice':{
 			'Y':{
@@ -143,13 +147,13 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-'show background black',
+'show background filler with FadeIn','play sound warmusic',
 		'Thats correct! Not only was he taken by the Soviets at the end of the war and held for three years with his family, but he also risked consequences due to insubordination as consul in Lithuania. Sughiara ultimately lost his job, having been dismissed from the Japanese Foreign Service, and then had to make a living in other ways.',
 		'jump nextslide',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background filler with FadeIn','play sound warmusic',
 		'Not quite! Not only was he taken by the Soviets at the end of the war and held for three years with his family, but he also risked consequences due to insubordination as consul in Lithuania. Sughiara ultimately lost his job, having been dismissed from the Japanese Foreign Service, and then had to make a living in other ways.',
         'jump nextslide',
         ],
@@ -163,12 +167,13 @@ monogatari.script ({
 	],
 
 	'blackGrape':[
-		'show background visa with FadeIn', 'As a result, Sugihara was troubled by their situation and became receptive to the refugees who came through the country, supporting them with transit visas, even though it defied the later instructions of the Japanese government to only provide visas only to those who had proper arrangements.','Sugihara obtained visas at his own initiative without even obtaining his ministry’s support and then continued to issue their distribution when Tokyo sent a message that he should not and warned him against issuing visas without due process.','During a brief period that the consulate continued to function before being closed down, Sugihara saved thousands of people, including rabbis and Talmudic students, who otherwise would have had no other way to evade being murdered.','Towards the deadline for leaving the country, Sugihara, along with a small staff, even stamped some of the passports himself, continuing to work even at the railway station as he was living.','By the time Sugihara left Lithuania, there had been 2,140 visas issued, which covered an additional 300 that were mostly children.','by issuing visas to the Jewish refugees, he risked his career, his familys safety, and also his life. He worked tirelessly day and night, usually for hours on end, signing thousands of visa applications and personally meeting with refugees and their familys.','When the Soviet army was victorious in their march through the Balkans in 1944, they arrested Sugihara with the other diplomats that were there from enemy nations.','Sugihara and his family were held for three years before they were returned to Japan in 1947','jump Ending',
+		'show background visa with FadeIn', 'As a result, Sugihara was troubled by their situation and became receptive to the refugees who came through the country, supporting them with transit visas, even though it defied the later instructions of the Japanese government to only provide visas only to those who had proper arrangements.','Sugihara obtained visas at his own initiative without even obtaining his ministry’s support and then continued to issue their distribution when Tokyo sent a message that he should not and warned him against issuing visas without due process.', 'show background consulate with FadeIn', 'During a brief period that the consulate continued to function before being closed down, Sugihara saved thousands of people, including rabbis and Talmudic students, who otherwise would have had no other way to evade being murdered.','Towards the deadline for leaving the country, Sugihara, along with a small staff, even stamped some of the passports himself, continuing to work even at the railway station as he was living.', 'show background chuine with FadeIn', 'By the time Sugihara left Lithuania, there had been 2,140 visas issued, which covered an additional 300 that were mostly children.','by issuing visas to the Jewish refugees, he risked his career, his familys safety, and also his life. He worked tirelessly day and night, usually for hours on end, signing thousands of visa applications and personally meeting with refugees and their familys.','When the Soviet army was victorious in their march through the Balkans in 1944, they arrested Sugihara with the other diplomats that were there from enemy nations.','Sugihara and his family were held for three years before they were returned to Japan in 1947','jump Ending',
 
 	],
 
 	'Ending':[
-		'show background black with FadeIn',
+		'show background filler',
+        
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -179,7 +184,7 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background yadvashem with fadeIn','In the period preceding his passing, Sugihara, the former Japanese consul in Lithuania, was recognized by Yad Vashem, the Holocaust Martyrs and heros Remembrance Authority in Israel, as Righteous Among the Nations for his assistance to refugees during World War II. The title was bestowed upon him by Yad Vashem in 1984, and a ceremony was held in Jerusalem in January 1985 to honor his contributions.', 'show background statue with FadeIn', 'Sugihara’s wartime experience demonstrates that the courage of one individual who follows their moral compass can make an incredible difference.','His actions alone saved the lives of so many.','Trusting ones own judgment of right and wrong at times is required when the law or government sanctifies something that is unjust.','jump choiceScreen',
+		'show background yadvashem with fadeIn','In the period preceding his passing, Sugihara, the former Japanese consul in Lithuania, was recognized by Yad Vashem, the Holocaust Martyrs and heros Remembrance Authority in Israel, as Righteous Among the Nations for his assistance to refugees during World War II. The title was bestowed upon him by Yad Vashem in 1984, and a ceremony was held in Jerusalem in January 1985 to honor his contributions.', 'show background statue with FadeIn', 'Sugihara’s wartime experience demonstrates that the courage of one individual who follows their moral compass can make an incredible difference.','His actions alone saved the lives of so many.','Trusting ones own judgment of right and wrong at times is required when the law or government sanctifies something that is unjust.','show background black with FadeIn','show image bib with FadeIn','Bibliography','hide image bib', 'show background black with FadeIn', 'show background black with FadeIn','show image imagecred with FadeIn', 'Image Credits', 'hide image imagecred', 'end', 
 	]
 });
 
@@ -196,7 +201,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Chiune Sugihara</b>
+        <b>A Silent Hero: Chiune Sugihara and the Power of Compassion</b>
 				<br/>
 				<br/>
         By: Daylin Kaplan
