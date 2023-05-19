@@ -238,7 +238,7 @@ monogatari.script ({
     'Bombay':[
 		'show background visa with fadeIn',
 		'Since the German advance made it unsafe to get to America by going West, Zvi took a much longer route through the Pacific. His journey to join his family took him on a tour of the British Empire.', 
-        'He went from Jaffa (now Tel Aviv) to Egypt, to Trans-Jordan (now Jordan), to Iraq, to India. He took a boat from Bombay (now Mumbai) to California where he caught a train to Jacksonville, Florida. ',
+        'He went from Jaffa (now Tel Aviv) to Egypt, to Trans-Jordan (now Jordan), to Iraq, to India. He took a boat from Bombay (now Mumbai) to San Pedro, California where he caught a train to Jacksonville, Florida. ',
 		'jump choiceScreen',
 	],
     'Conclusion':[
@@ -260,7 +260,7 @@ monogatari.script ({
 				'Do': 'jump Closing',
 			},
             'Back':{
-				'Text': 'Contiue reading',
+				'Text': 'Back to the map',
 				'Do': 'jump choiceScreen',
 			}
 		}
