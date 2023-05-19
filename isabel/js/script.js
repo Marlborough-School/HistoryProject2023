@@ -175,8 +175,8 @@ monogatari.script ({
         'show background black with fadeIn',
 		'show image LILY10 with fadeIn',
         'Lily and her two sisters, Renee and Piri, were motioned to move to the right while her mother, brother, and Sister Berta were signaled to move to the left. That was the last time Lily saw her mother. Later on at the camp, the Nazi’s ordered Lily to shower. When she came out of the shower, her clothes were gone; only her shoes remained.',
-         'hide image LILY10',
-        'show background black with fadeIn',
+        'hide image LILY10',
+        /*'show background black with fadeIn',*/
 		'show image LILY11 with fadeIn',
         'The concentration camp looked like a large factory. Lily was confused as to what it might be as she saw a fire appear from out of the chimneys and smelled a terrible stench. After asking around, she soon realized that it was not a factory, but the smell of Lilys parents dead bodies burning, along with the others who had been sent down the path to the left.',
         'hide image LILY11',
@@ -207,7 +207,7 @@ monogatari.script ({
         'show background black with fadeIn',
         'show image LILY15 with fadeIn',
         'Sharing her story to Tik Tok was Lilys mission and purpose. As antisemitism becomes a rising problem again in the United States, Ebert’s tik tok videos share important messages in an attempt to “save the world” from anti semitic views and negative stereotypes. In an interview, Ebert says “I was really not sure that I would stay alive. It is a miracle that I am here. But I promised myself, however long I will be alive, and whatever I will do in life, one thing is sure, I will tell my story,”',
-       
+        
         'In one of her tik toks, she shows her pendant, stating that it was the only piece of gold that survived auschwitz.',
       
 		'jump Ending',
