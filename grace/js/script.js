@@ -78,7 +78,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'stare.jpg',
 	'crycat':'sir.jpg',
     'sillybilly': 'family.jpg',
-    'redgrape':'blackgrape.jpeg',
+    'redgrape':'home.jpg',
 });
 
 
@@ -142,15 +142,15 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
+		'show background grape with fadeIn',
                 'play sound cat-meow',
 		'De Gaulle began to notice the challenges his army was facing, he did not panic and continued to develop more war strategies. He believed that through strategies and mobilization, they would be able to overcome the odds that were against them, and be able to take back control and power over their land. These issues included extreme geographic disadvantages and a lack of mobilization. This made it extremely difficult for his army and he began to implement his own tactics that were unlike traditional trench fighting tactings. Instead he used modern techniques comparable to those of Germany’s. Despite his great efforts, the French government began to surrender to Germany, which caused de Gaulle to flee to London.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
-		'Once Charles de Gualle fled to London, he began to form an army of his own called the Free France Forces, which later became known as Fighting France, and encouraged others to stand up to Germany. He began spreading the word about his army and encouraging more soldiers to join him, and even went on the radio to encourage the resistance of Hitlor. After the French government’s surrender, they began to comply to and cooperate with the Nazi’s which caused de Gaulle to realize the urgency in which he needed to prepare his army. While in London de Gaulle made a deal with Churchill to support his Free French Forces against Hitlor. Their forces served in major battles against both the Axis and Vichy forces all across the world, and were able to win battles that led to the turning point in the war.',
+		'show background redgrape with fadeIn',
+		'Once Charles de Gualle fled to London, he began to form an army of his own called the Free France Forces, which later became known as Fighting France, and encouraged others to stand up to Germany. He began spreading the word about his army and encouraging more soldiers to join him, and even went on the radio to encourage the resistance of Hitlor. After the French government’s surrender, they began to comply to and cooperate with the Nazi’s, so de Gaulle realized the urgency in which he needed to prepare his army. While in London de Gaulle made a deal with Churchill to support his Free French Forces against Hitlor. Their forces served in major battles and were able to win battles that led to the turning point in the war.',
 		'jump Ending',
 	],
 
