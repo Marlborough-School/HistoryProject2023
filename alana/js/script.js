@@ -66,6 +66,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
+     'bib':'bibliography.png',
+    'imageC':'imagesCited.png',
    
 });
 
@@ -89,8 +91,6 @@ monogatari.assets ('scenes', {
     'educenter':'educenter.jpeg',
     'hologram':'hologram.jpeg',
     'wallpaper':'wallpaper.jpeg',
-    'bib':'bibliography.png',
-    'imageC':'imagesCited.png',
 });
 
 
@@ -221,33 +221,9 @@ monogatari.script ({
         'show background hologram',
         'play sound hologram2',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
-        'jump Ending',
-    ],
-
-	'Ending':[
-		'show background black with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
-		}
-		}
-	],
-
-	'Closing':[
-		'show background black with fadeIn',
-		'I hope you learned something about the incredible impact Erna Gans had on Holocaust Education.',
-		'jump bib',
-	],
-    'bib':[
-        'show background bib',
-    'jump imageC',
-    ],
-    'imageC':[
-        'show background imageC',
-        'end'
-    ],
+        'jump Closing',
+     ],
+    
 });
 
 monogatari.component ('main-screen').template (() => {
