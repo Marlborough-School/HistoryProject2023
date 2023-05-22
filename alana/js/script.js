@@ -222,15 +222,16 @@ monogatari.script ({
         'play sound hologram2',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
         'jump Closing',
-   
+     ],
+    
 	'Closing':[
 		'show background black,
         'show image bib',
 		'I hope you learned something about the incredible impact Erna Gans had on Holocaust Education.',
     'show background black',
     'show image imageC',
-'end'
-        ],
+'end',
+
     ],
 });
 
