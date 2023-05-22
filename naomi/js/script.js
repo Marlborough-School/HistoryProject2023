@@ -67,8 +67,12 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 'Baby2':'Baby2.jpeg',
     'Parents':'Parents.jpeg',
+<<<<<<< Updated upstream
     'grape':'Holocaust.jpeg',
     'Older Anita': 'OlderAnita.jpeg',
+=======
+    	'Parents':'Parents.jpeg',
+>>>>>>> Stashed changes
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -89,12 +93,21 @@ monogatari.script ({
 	'Start': [
 		'show background black with fadeIn',
         'show image Baby2 with fadeIn',
+<<<<<<< Updated upstream
 		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old.',
 		'Question: Approximately how many Jewish people do you believe perished in the Holocaust?',
 		{'Choice':{
 			'Y':{
 				'Text': '600,000',
 				'Do': 'jump noAnswer',
+=======
+		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old. This is the story of Anita Epstein. She was one of the few surviving children of the Holocaust.', 
+		'Question: How many Jewish people do you believe perished in the Holocaust?',
+		{'Choice':{
+			'Y':{
+				'Text': '600,000',
+				'Do': 'This is the wrong answer, but lets dive deeper into understanding more about Anitas story.'
+>>>>>>> Stashed changes
 			},
 			'N':{
 				'Text': '6 million',
@@ -105,9 +118,14 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
+<<<<<<< Updated upstream
 		'hide image Baby2',
         'show image HidingBaby.jpeg with fadeIn',
 		'Correct! Out of those 6 million people, approximately 1.5 million of them were children. Anita was one of the lucky ones, being out of the 150,000 Jewish children who survived.',
+=======
+		'show background black with fadeIn',
+		'You will be able to code more choices/buttons into your project. Click to see another example.',
+>>>>>>> Stashed changes
 		'jump choiceScreen',
 	],
 
@@ -118,6 +136,10 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
+<<<<<<< Updated upstream
+=======
+		'show background Parents with fadeIn',
+>>>>>>> Stashed changes
         'show image Parents with fadeIn',
 		{'Choice':{
 			'1':{
@@ -193,7 +215,11 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
+<<<<<<< Updated upstream
         <b>The Mirale That Was Anita Epstein</b>
+=======
+        <b>The Miracle That Was Anita Epstein</b>
+>>>>>>> Stashed changes
 				<br/>
 				<br/>
         By: Naomi B. 
