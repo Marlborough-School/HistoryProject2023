@@ -74,10 +74,11 @@ monogatari.assets ('scenes', {
 	'title':'degualle.jpg',
 	'duck2':'group.jpg',
 	'black':'young.jpg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
+	'grape':'meeting.jpg',
+	'potatocat': 'stare.jpg',
 	'crycat':'sir.jpg',
     'sillybilly': 'family.jpg',
+    'redgrape':'blackgrape.jpeg',
 });
 
 
