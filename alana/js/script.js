@@ -236,9 +236,8 @@ monogatari.script ({
 	],
 
 	'Closing':[
-		'show background black with fadeIn',
+		'show background bib,
 		'I hope you learned something about the incredible impact Erna Gans had on Holocaust Education.',
-        'show background bib',
     'show background black',
     'show image imageC',
 'end'
