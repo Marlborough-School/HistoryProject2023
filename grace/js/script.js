@@ -141,18 +141,19 @@ monogatari.script ({
 	'greenGrape':[
 		'show background duck with fadeIn',
                 'play sound cat-meow',
-		'While de Gaulle began to notice the challenges his army was facing, he did not panic and continued to develop more war strategies. He believed that through strategies and mobilization, they would be able to overcome the odds that were against them, and be able to take back control and power over their land, but they were facing serious issues. These issues included extreme geographic disadvantages and a lack of mobilization. This made it extremely difficult for his army and he began to implement his own tactics that were unlike traditional trench fighting tactings. Instead he used modern techniques comparable to those of Germany’s. Despite his great efforts, the French government began to surrender to Germany, which caused de Gaulle to flee to London.',
+		'De Gaulle began to notice the challenges his army was facing, he did not panic and continued to develop more war strategies. He believed that through strategies and mobilization, they would be able to overcome the odds that were against them, and be able to take back control and power over their land. These issues included extreme geographic disadvantages and a lack of mobilization. This made it extremely difficult for his army and he began to implement his own tactics that were unlike traditional trench fighting tactings. Instead he used modern techniques comparable to those of Germany’s. Despite his great efforts, the French government began to surrender to Germany, which caused de Gaulle to flee to London.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
 		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
+		'Once Charles de Gualle fled to London, he began to form an army of his own called the Free France Forces, which later became known as Fighting France, and encouraged others to stand up to Germany. He began spreading the word about his army and encouraging more soldiers to join him, and even went on the radio to encourage the resistance of Hitlor. After the French government’s surrender, they began to comply to and cooperate with the Nazi’s which caused de Gaulle to realize the urgency in which he needed to prepare his army. While in London de Gaulle made a deal with Churchill to support his Free French Forces against Hitlor. Their forces served in major battles against both the Axis and Vichy forces all across the world, and were able to win battles that led to the turning point in the war.',
 		'jump Ending',
 	],
 
 	'Ending':[
 		'show background potatocat with fadeIn',
+        'After persevering through the rest of the war with the Free French Forces, de Gaulle was able to secured the liberation of France and took the position as provisional President of France until stepping down in 1944. In conclusion, Charles de Gaulle dedicated his life to a military career because he wanted to be able to make a difference in history for the better, and continued to fight for what he believed in after his country had already surrendered.',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -164,8 +165,7 @@ monogatari.script ({
 
 	'Closing':[
 		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'It is important to recognize how he challenged the status quo of warfare, and pushed the French to further develop and advance their military equipment and strategies. De Gaulle’s founding of the Free French Forces showed French people, and parts of the world, that the fight against Hitlor was not over, and if the allied countries continued to work together they would be able to regain control over their own land and restore peace in the world.',
 		'end'
 	]
 });
