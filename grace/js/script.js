@@ -73,10 +73,10 @@ monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'title':'degualle.jpg',
 	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
+	'black':'group.jpg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
-	'crycat':'home.png',
+	'crycat':'',
 });
 
 
@@ -115,15 +115,15 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'First: The Early Battles of WW2',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Second: Challenges the French Military Faced',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Third: Fighing France was Born',
 				'Do': 'jump blackGrape',
 			}
 		}
