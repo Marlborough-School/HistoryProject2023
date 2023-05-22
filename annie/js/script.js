@@ -65,34 +65,38 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    //'yang':'YANG.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'duck':'ducksong.jpg',
-	'duck2':'duck2.jpeg',
+	'yang':'YANG.jpg',
+	'duck2':'yangc.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
+    'yang2':'yang2.jpeg',
+    
 });
 
 
 //
 monogatari.script ({
 	'Start': [
-		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show background black with fadeIn',
+        'show background yang with fadeIn',
+		'There once was a soldier who fought for 3 different countries in the same war. This man was born in Korea, but served for Japan, Germany, and Russia. Though the mystery is, is he even real? ',
+         'show background yang2 with fadeIn',
+		'Are you interested in the story of this mystery man?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Yes',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'Yes',
 				'Do': 'jump noAnswer'
 			},
 		    },
@@ -101,13 +105,13 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Good Choice! Let us take a look at his life.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'Good! Let us take a look at his life.',
 		'jump choiceScreen',
 	],
 
@@ -115,16 +119,20 @@ monogatari.script ({
 		'show background duck2 with fadeIn',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'Early Life',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Japan',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Russia',
 				'Do': 'jump blackGrape',
+			},
+            '4':{
+				'Text': 'Germany',
+				'Do': 'jump blueGrape',
 			}
 		}
 	}
@@ -133,7 +141,7 @@ monogatari.script ({
 	'redGrape':[
 		'show background duck with fadeIn',
                 'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'The earliest known information about Yang starts when he was 18. He was living in Manchuria, China, which was being controlled by Japan. While living there, he was forcefully drafted in the Kwantung Army in 1938. The Kwantung Army was one of Japans main fighting forces that helped lead them through the war. Yangs role in the army was to go to northern Manchuria and help fight against the USSR.',
                 'hide video cat-video',
 		'jump choiceScreen',
 	],
@@ -146,6 +154,11 @@ monogatari.script ({
 	],
 
 	'blackGrape':[
+		'show background grape with fadeIn',
+		'You found the grapes! Now we will go the end of the project',
+		'jump choiceScreen',
+	],
+    'blueGrape':[
 		'show background grape with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
@@ -183,10 +196,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>Yang Kyoungjong </b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: anniepa..
         </p>
 				</center>
 				<br/>
