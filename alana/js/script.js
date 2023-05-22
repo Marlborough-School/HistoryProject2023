@@ -55,7 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
-    'hologram2':'hologram - history project.m4a',
+    'hologram2':'hologramproject.m4a',
 });
 
 // Define the videos used in the game.
@@ -89,6 +89,8 @@ monogatari.assets ('scenes', {
     'educenter':'educenter.jpeg',
     'hologram':'hologram.jpeg',
     'wallpaper':'wallpaper.jpeg',
+    'bib':'bibliography.png',
+    'imageC':'imagesCited.png',
 });
 
 
@@ -219,7 +221,7 @@ monogatari.script ({
         'show background hologram',
         'play sound hologram2',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
-        'jump choiceScreen',
+        'jump Ending',
     ],
 
 	'Ending':[
@@ -235,10 +237,17 @@ monogatari.script ({
 
 	'Closing':[
 		'show background black with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
-	]
+		'I hope you learned something about the incredible impact Erna Gans had on Holocaust Education.',
+		'jump bib',
+	],
+    'bib':[
+        'show background bib',
+    'jump imageC',
+    ],
+    'imageC':[
+        'show background imageC',
+        'end'
+    ],
 });
 
 monogatari.component ('main-screen').template (() => {
