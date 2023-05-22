@@ -72,8 +72,8 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'title':'degualle.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'group.jpg',
+	'duck2':'group.jpg',
+	'black':'young.jpg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'',
@@ -113,6 +113,7 @@ monogatari.script ({
 
 	'choiceScreen':[
 		'show background duck2 with fadeIn',
+        'Take a moment to follow this timeline following de Gualle through his experiences in WW2',
 		{'Choice':{
 			'1':{
 				'Text': 'First: The Early Battles of WW2',
