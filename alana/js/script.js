@@ -227,13 +227,15 @@ monogatari.script ({
      ],
     'Closing':[
         'show background black',
+        'show image cits',
         'I hope you have learn something about the incredible work Erna Gans did for Holocaust Education.',
         'jump bibliography',
     ],
+   
     'bibliography':[
-        'show background black',
+       'show background black',
+        'hide image cits',
         'show image bib',
-        'jump citations',
     ],
    
 });
