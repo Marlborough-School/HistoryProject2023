@@ -101,7 +101,7 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'Carles de Gualle was a Frenchman born in 1890, in Lillie, France into a wealthy and growing family of five at the time. His mother came from wealth, and his father was a successful history professor and founder of a school. He was highly influenced by his father who was a successful history professor and founder of a school and his uncle, also named Charles de Gualle, who was a historian and had an interest in military tactics. As he came into a family of scholars, he became highly literate and informed of French history at a young age, and had philosophical discussions about war and war tactics in his home led to his aspirations to have a military career. ',
+		'Carles de Gualle was a Frenchman born in 1890, in Lillie, France into a wealthy and growing family of five at the time. His mother came from wealth, and his father was a successful history professor and founder of a school. He was highly influenced by his father \ and his uncle, also named Charles de Gualle, who was a historian and had an interest in military tactics. As he came into a family of scholars, he became highly literate and informed of French history at a young age, and had philosophical discussions about war and war tactics in his home led to his aspirations to have a military career. ',
 		'jump choiceScreen',
 	],
 

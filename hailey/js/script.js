@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'music':'music.mp3',
 });
 
 // Define the voice files used in the game.
@@ -65,19 +65,18 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'face': 'face.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
-	'spy':'Jeannie Rousseau.jpg',
+	'spy':'spy.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
-    '__':'__',
 });
 
 
@@ -85,6 +84,7 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background spy with fadeIn',
+        'play music music',
 		'Jeanne was an incredibly adventurous women with an inspiring story. ',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
@@ -102,6 +102,7 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
+        'show image face with fadeIn',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
@@ -113,7 +114,8 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-		'show background duck2 with fadeIn',
+		'show background black',
+        'hide image face ith fadeOut',
 		{'Choice':{
 			'1':{
 				'Text': 'Red Grapes',
@@ -167,7 +169,8 @@ monogatari.script ({
 		'show background crycat with fadeIn',
 		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
 		'Go make your own project now have fun lol',
-		'end'
+		'end',
+        'stop music music',
 	]
 });
 
