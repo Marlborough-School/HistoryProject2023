@@ -224,15 +224,6 @@ monogatari.script ({
         'jump Closing',
      ],
     
-	'Closing':[
-		'show background black,
-        'show image bib',
-		'I hope you learned something about the incredible impact Erna Gans had on Holocaust Education.',
-    'show background black',
-    'show image imageC',
-'end',
-
-    ],
 });
 
 monogatari.component ('main-screen').template (() => {
