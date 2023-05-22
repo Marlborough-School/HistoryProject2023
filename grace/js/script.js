@@ -78,7 +78,7 @@ monogatari.assets ('scenes', {
 	'potatocat': 'stare.jpg',
 	'crycat':'sir.jpg',
     'sillybilly': 'family.jpg',
-    'home':'home.jpg',
+    'home':'radio.jpg',
 });
 
 
