@@ -247,7 +247,7 @@ monogatari.script ({
     'imageC':[
         'show background imageC',
         'end'
-    ]
+    ],
 });
 
 monogatari.component ('main-screen').template (() => {
