@@ -1,0 +1,51 @@
+/*
+ * main.css
+ */
+
+
+body {
+    background: #ddd;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.thumb {
+    float: left;
+    height: 280px;
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 12%;
+    padding-right: 10%;
+}
+
+br {
+    clear: both;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    display: table;
+
+    float: left;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  display: table-caption;
+  caption-side: bottom;
+  height: 40px;
+}

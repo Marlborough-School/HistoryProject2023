@@ -55,7 +55,7 @@ monogatari.assets ('voices', {
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
 	'cat-meow':'cat-meow.mp3',
-    'hologram2':'hologram - history project.m4a',
+    'hologram2':'hologramproject.m4a',
 });
 
 // Define the videos used in the game.
@@ -66,6 +66,9 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
+     'bib':'bibliography.png',
+    'cites':'imagesCited.png',
+      'museum':'museum.jpeg',
    
 });
 
@@ -84,7 +87,6 @@ monogatari.assets ('scenes', {
     'ernadoc':'ernadoc.png',
     'plascow':'plascow.avif',
     'docu':'docu.png',
-    'museum':'museum.jpeg',
     'exhibit':'exhibit.jpeg',
     'educenter':'educenter.jpeg',
     'hologram':'hologram.jpeg',
@@ -198,13 +200,15 @@ monogatari.script ({
     ],
     
     'accomplishments':[
-        'show background museum',
+        'show background black',
+        'show image museum ',
         'Erna’s goal was to educate as many people as she could about the Holocaust. After creating the Holocaust Memorial Foundation of Illinois, her next step in reaching that goal was creating the Illinois Holocaust Museum and Education Center.',
         'jump accomplishments2',
         ],
     
     'accomplishments2':[
         'show background exhibit',
+        'hide image museum',
         'The museum was founded in 1981 by the HMIF. It provides education for the average person who wants to learn, students & educators, and people researching.',
         'jump accomplishments3',
     ],
@@ -219,26 +223,21 @@ monogatari.script ({
         'show background hologram',
         'play sound hologram2',
         'Some exhibits are very interactive such as the Holograms of survivors telling their stories and experiences. People can even ask the holograms questions. Holograms aren’t the only way to hear from survivors, living Holocaust survivors often speak to visitors about their personal experiences.',
-        'jump choiceScreen',
+        'jump Closing',
+     ],
+    'Closing':[
+        'show background black',
+        'show image cits',
+        'I hope you have learn something about the incredible work Erna Gans did for Holocaust Education.',
+        'jump bibliography',
     ],
-
-	'Ending':[
-		'show background black with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Conclusion',
-				'Do': 'jump Closing',
-			}
-		}
-		}
-	],
-
-	'Closing':[
-		'show background black with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
-		'end'
-	]
+   
+    'bibliography':[
+       'show background black',
+        'hide image cits',
+        'show image bib',
+    ],
+   
 });
 
 monogatari.component ('main-screen').template (() => {
