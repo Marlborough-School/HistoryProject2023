@@ -9,7 +9,12 @@ monogatari.action ('message').messages ({
 			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
 			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
 		`
-	}
+	},
+    'hello': {
+        title: 'Hi! Here is a title',
+        subtitle: 'here is a subtitle',
+        body: 'this is the body of the message. you can write a lot!'
+    }
 });
 
 // Define the notifications used in the game
@@ -65,7 +70,7 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+	'grape':'blackgrape.jpeg',
 });
 
 monogatari.characters ({
@@ -84,7 +89,6 @@ monogatari.assets ('scenes', {
 	'duck':'ducksong.jpg',
 	'duck2':'duck2.jpeg',
 	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
 	'crycat':'crycat2.jpeg',
 });
@@ -94,8 +98,8 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'grape',
+		'text 2',
 		{'Choice':{
 			'Y':{
 				'Text': 'Yes, I do have grapes',
@@ -110,16 +114,17 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'show background black',
+        'show image grape with fadeIn',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
+		'show message hello',
 		'jump choiceScreen',
 	],
+    
+    
 
 	'choiceScreen':[
 		'show background duck2 with fadeIn',
@@ -156,7 +161,7 @@ monogatari.script ({
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
+		'show background crycat with fadeIn',
 		'You found the grapes! Now we will go the end of the project',
 		'jump Ending',
 	],
@@ -193,10 +198,10 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Emma's Project</b>
+        <b>this is a title </b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Emma
         </p>
 				</center>
 				<br/>

@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 //DEFINE THE IMAGES YOU WANT HERE
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
-
+    'lotus':'lotus.jpg',
+    'lotus_small':'lotus_small.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -84,8 +85,9 @@ monogatari.assets ('scenes', {
 monogatari.script ({
 	'Start': [
 		'show background duck with fadeIn',
-		'Steve Hideg used to be a very adventurous young boy who always found joy in everything he did. ',
-        'testing',
+		'Dr. Kessner was here. ',
+        'The quick brown fox jumps over the lazy dog',
+        'Dr. Kessner was here',
 		'Example question: Hey bum bum bum got any grapes?',
 		{'Choice':{
 			'Y':{
@@ -102,6 +104,7 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
+                'show image lotus_small',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
 		'jump choiceScreen',
 	],
@@ -184,10 +187,11 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b>Your Project Title Goes Here</b>
+        <b>The Pendant in the Shoe
+Lily Ebert’s Journey Through the Holocaust</b>
 				<br/>
 				<br/>
-        By: The Duck Selling Lemonade at the Lemonade Stand
+        By: Isabel Konstant
         </p>
 				</center>
 				<br/>

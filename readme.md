@@ -3,6 +3,8 @@
 __MODERN WORLD HISTORY__  
 __Second Semester Final Project: Visual Narrative__  
 
+[Live site](https://marlborough-school.github.io/HistoryProject2023/)
+
 
 ### Software installation
 
@@ -22,7 +24,5 @@ __Second Semester Final Project: Visual Narrative__
 - [Monogatari main webpage](https://monogatari.io/)
 
 
-### Notes
 
-[live site (testing)](https://marlborough-school.github.io/HistoryProject2023/)
 
