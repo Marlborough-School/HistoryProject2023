@@ -156,7 +156,7 @@ monogatari.script ({
 
 	'Ending':[
 		'show background potatocat with fadeIn',
-        'After persevering through the rest of the war with the Free French Forces, de Gaulle was able to secured the liberation of France and took the position as provisional President of France until stepping down in 1944. In conclusion, Charles de Gaulle dedicated his life to a military career because he wanted to be able to make a difference in history for the better, and continued to fight for what he believed in after his country had already surrendered.',
+        'After persevering through the rest of the war with the Free French Forces, de Gaulle was able to secured the liberation of France and took the position as provisional President of France until stepping down in 1944. In conclusion, Charles de Gaulle dedicated his life to a military career because he wanted to be able to make a difference in history for the better, and continued to fight for what he believed in after his country had already surrendered. ',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
