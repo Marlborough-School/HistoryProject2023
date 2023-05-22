@@ -168,7 +168,7 @@ monogatari.script ({
 
 	'Closing':[
 		'show background crycat with fadeIn',
-		'It is important to recognize how he challenged the status quo of warfare, and pushed the French to further develop and advance their military equipment and strategies. De Gaulle’s founding of the Free French Forces showed French people, and parts of the world, that the fight against Hitlor was not over, and if the allied countries continued to work together they would be able to regain control over their own land and restore peace in the world.',
+		'It is very important to recognize how he challenged the status quo of warfare, and pushed the French to further develop and advance their military equipment and strategies. De Gaulle’s founding of the Free French Forces showed French people, and parts of the world, that the fight against Hitlor was not over, and if the allied countries continued to work together they would be able to regain control over their own land and restore peace in the world.',
 		'end'
 	]
 });
