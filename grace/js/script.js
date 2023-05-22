@@ -76,8 +76,8 @@ monogatari.assets ('scenes', {
 	'black':'young.jpg',
 	'grape':'blackgrape.jpeg',
 	'potatocat': 'potatocat.jpeg',
-	'crycat':'sir.jpeg',
-    'sillybilly': 'family.jpeg',
+	'crycat':'sir.jpg',
+    'sillybilly': 'family.jpg',
 });
 
 
