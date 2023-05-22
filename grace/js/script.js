@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	'cat-meow':'gun.mp3',
 });
 
 // Define the videos used in the game.
@@ -79,6 +79,7 @@ monogatari.assets ('scenes', {
 	'crycat':'sir.jpg',
     'sillybilly': 'family.jpg',
     'home':'radio.jpg',
+    'line':'line.jpg',
 });
 
 
@@ -134,8 +135,8 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-                'show video cat-video background',
+		'show background line with fadeIn',
+                'play sound cat-meow',
 		'When WW2 began, de Gualle was informed that he would lead an armored division and he immediately began finding and preparing staff and soldiers for his division. During his first battle, his army barely escaped defeat. Later on he took around 400 Nazi prisoners in order for his soliders to escape the area safely. Fighting back against Hitlor and contributing to the fight to maintain order in the world was far more important than the risk of loss. Through the leadership of de Gaulle the soldiers understood why they were fighting, and put more trust into his tactics and plans, as he has shown his skill and intelligence on the battlefield.',
                 'hide video cat-video',
 		'jump choiceScreen',
@@ -143,7 +144,6 @@ monogatari.script ({
 
 	'greenGrape':[
 		'show background grape with fadeIn',
-                'play sound cat-meow',
 		'De Gaulle began to notice the challenges his army was facing, he did not panic and continued to develop more war strategies. He believed that through strategies and mobilization, they would be able to overcome the odds that were against them, and be able to take back control and power over their land. These issues included extreme geographic disadvantages and a lack of mobilization. This made it extremely difficult for his army and he began to implement his own tactics that were unlike traditional trench fighting tactings. Instead he used modern techniques comparable to those of Germany’s. Despite his great efforts, the French government began to surrender to Germany, which caused de Gaulle to flee to London.',
 		'jump choiceScreen',
 	],
