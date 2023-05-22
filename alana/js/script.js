@@ -235,8 +235,10 @@ monogatari.script ({
         'show image bib',
         'jump citations',
     ],
+   
     'citations':[
         'show background black',
+        'hide image bib',
         'show image cits',
     ],
 });
