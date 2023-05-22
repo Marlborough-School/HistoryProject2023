@@ -210,12 +210,10 @@ monogatari.script ({
         'Sharing her story to Tik Tok was Lilys mission and purpose. As antisemitism becomes a rising problem again in the United States, Ebert’s tik tok videos share important messages in an attempt to “save the world” from anti semitic views and negative stereotypes. In an interview, Ebert says “I was really not sure that I would stay alive. It is a miracle that I am here. But I promised myself, however long I will be alive, and whatever I will do in life, one thing is sure, I will tell my story,”',
         'hide image LILY15',
         'show background black with fadeIn',
-        'show video MYMOVIE',
+        'show video MYMOVIE background',
         'In one of her tik toks, she shows her pendant, stating that it was the only piece of gold that survived auschwitz.',
         'hide video MYMOVIE',
-        'end',
-      
-		'jump Ending',
+        'jump Ending',
 	],
 
 	'Ending':[
