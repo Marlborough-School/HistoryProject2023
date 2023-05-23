@@ -83,6 +83,8 @@ monogatari.assets ('images', {
     'LILY13':'LILY13.webp',
     'LILY14':'LILY14.jpeg',
     'LILY15':'LILY15.jpeg',
+    'LILY19':'LILY19.jpeg',
+    'BIB1':'BIB1',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -210,29 +212,27 @@ monogatari.script ({
         'Sharing her story to Tik Tok was Lilys mission and purpose. As antisemitism becomes a rising problem again in the United States, Ebert’s tik tok videos share important messages in an attempt to “save the world” from anti semitic views and negative stereotypes. In an interview, Ebert says “I was really not sure that I would stay alive. It is a miracle that I am here. But I promised myself, however long I will be alive, and whatever I will do in life, one thing is sure, I will tell my story,”',
         'hide image LILY15',
         'show background black with fadeIn',
-        'show video MYMOVIE',
+        'show video MYMOVIE background',
         'In one of her tik toks, she shows her pendant, stating that it was the only piece of gold that survived auschwitz.',
         'hide video MYMOVIE',
-        'end',
+     
       
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background potatocat with fadeIn',
-		{'Choice':{
-			'Closing':{
-				'Text': 'Lily hopes that by sharing untold stories, her audience can retell those stories, aiming to change lives and perspectives. She wants everyone to understand just how terrible human beings have been and still can be to each other, and encourages young people to understand the significance of tolerance, love, and kindness. By educating her audience, whether that be adults or the younger generation, she hopes that they can build a better future. She wants to remind the gen-z-ers that regardless of skin color, nationality or religion, everyones blood is red. ',
-				'Do': 'jump Closing',
-			}
-		}
-		}
+
+          'show image LILY19 with fadeIn',
+		 'Lily hopes that by sharing untold stories, her audience can retell those stories, aiming to change lives and perspectives. She wants everyone to understand just how terrible human beings have been and still can be to each other, and encourages young people to understand the significance of tolerance, love, and kindness. By educating her audience, whether that be adults or the younger generation, she hopes that they can build a better future. She wants to remind the gen-z-ers that regardless of skin color, nationality or religion, everyones blood is red. ',
+        'hide image LILY19',
+        'show image BIB1 with fadeIn',
+      
+		
 	],
 
 	'Closing':[
-		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		
+		
 		'end'
 	]
 });
