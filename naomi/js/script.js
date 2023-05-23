@@ -70,6 +70,7 @@ monogatari.assets ('images', {
     'grape':'Holocaust.jpeg',
     'Older Anita': 'OlderAnita.jpeg',
     	'Parents':'Parents.jpeg',
+     'Holocaust': 'Holocaust.jpg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -82,6 +83,7 @@ monogatari.assets ('scenes', {
 	'Older Anita': 'OlderAnita.jpeg',
 	'crycat':'crycat2.jpeg',
     'Baby4': 'HidingBaby.jpeg',
+
 });
 
 
@@ -92,6 +94,8 @@ monogatari.script ({
         'show image Baby2 with fadeIn',
 
 		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old. This is the story of Anita Epstein. She was one of the few surviving children of the Holocaust.', 
+        'hide image Baby2',
+         'show image Holocaust',
 		'Question: How many Jewish people do you believe perished in the Holocaust?',
 		{'Choice':{
 			'Y':{
