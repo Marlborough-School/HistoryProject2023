@@ -71,6 +71,8 @@ monogatari.assets ('images', {
     'Older Anita': 'OlderAnita.jpeg',
     	'Parents':'Parents.jpeg',
      'Holocaust': 'Holocaust.jpg',
+    '2Children': '2Children.jpeg',
+    'HidingBaby':'HidingBaby.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -111,7 +113,8 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-		'hide image Baby2',
+		'hide image Holocaust',
+        'show image 2Children',
             'show image HidingBaby.jpeg with fadeIn',
 		'Correct! Out of those 6 million people, approximately 1.5 million of them were children. Anita was one of the lucky ones, being out of the 150,000 Jewish children who survived.',
 		'jump choiceScreen',
@@ -119,13 +122,16 @@ monogatari.script ({
 
 	'noAnswer':[
 		'show background black',
-		'This is the wrong answer, but please proceed to learn more about Anitas life and experience.',
+        'hide image Holocaust',
+    
+		'This is the wrong answer, but please proceed to learn more about Anitas life and experience as well as the history of the Holocaust.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
-
-        'show background Parents with fadeIn',
+       'Anita was only a young child when the Holocaust occured. Though she never went to a camp, she was faced with faking an identity that she thought was her true identity.',
+        'show scene Baby3',
+    
 
 		{'Choice':{
 			'1':{
@@ -145,11 +151,12 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-        'hide image Baby2',
-        'show image Baby4 with fadeIn',
-        'hide background duck with fadeIn',
-                'show video cat-video background',
-		'Anita was born in the Krawkow Ghetto in on November 18th, 1942. Since she was only a baby, her parents knew that the only way she would survive is if they gave her to a Catholic family. Anita was given to a woman named Sophia Zendler by her parents Eda and Salek with a promise of payment and land.',
+        'show image Parents with fadeIn',
+        'These are Anitas parents. Eda and Salek Kuesentler.',
+                'hide image Parents',
+        'show image KrakowGhetto.jpeg',
+		'Anita was born into the Krawkow Ghetto on November 18th, 1942. Since she was only a baby, her parents knew that the only way she would survive is if they gave her to a Catholic family. Anita was given to a woman named Sophia Zendler by her parents Eda and Salek with a promise of payment and land.',
+        'show image HidingBaby with fadeIn',
                 'hide video cat-video',
 		'jump choiceScreen',
 	],
