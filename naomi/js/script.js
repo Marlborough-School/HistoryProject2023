@@ -93,21 +93,18 @@ monogatari.script ({
 	'Start': [
 		'show background black with fadeIn',
         'show image Baby2 with fadeIn',
-<<<<<<< Updated upstream
 		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old.',
 		'Question: Approximately how many Jewish people do you believe perished in the Holocaust?',
 		{'Choice':{
 			'Y':{
 				'Text': '600,000',
 				'Do': 'jump noAnswer',
-=======
 		'"She told me I had a name I didnt know, a family I didnt know and a religion I didnt know." On Feburary 1, 1943, Anitas parents gave her up to a woman named Sophia Zendler when she was just 4 months old. This is the story of Anita Epstein. She was one of the few surviving children of the Holocaust.', 
 		'Question: How many Jewish people do you believe perished in the Holocaust?',
 		{'Choice':{
 			'Y':{
 				'Text': '600,000',
 				'Do': 'This is the wrong answer, but lets dive deeper into understanding more about Anitas story.'
->>>>>>> Stashed changes
 			},
 			'N':{
 				'Text': '6 million',
@@ -118,14 +115,11 @@ monogatari.script ({
         ],
 
 	'yesAnswer':[
-<<<<<<< Updated upstream
 		'hide image Baby2',
         'show image HidingBaby.jpeg with fadeIn',
 		'Correct! Out of those 6 million people, approximately 1.5 million of them were children. Anita was one of the lucky ones, being out of the 150,000 Jewish children who survived.',
-=======
 		'show background black with fadeIn',
 		'You will be able to code more choices/buttons into your project. Click to see another example.',
->>>>>>> Stashed changes
 		'jump choiceScreen',
 	],
 
@@ -136,10 +130,7 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-<<<<<<< Updated upstream
-=======
 		'show background Parents with fadeIn',
->>>>>>> Stashed changes
         'show image Parents with fadeIn',
 		{'Choice':{
 			'1':{
@@ -159,10 +150,9 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-	'hide image Parents',
         'hide image Baby2',
         'show image Baby4 with fadeIn',
-        'show background duck with fadeIn',
+        'hide background duck with fadeIn',
                 'show video cat-video background',
 		'Anita was born in the Krawkow Ghetto in on November 18th, 1942. Since she was only a baby, her parents knew that the only way she would survive is if they gave her to a Catholic family. Anita was given to a woman named Sophia Zendler by her parents Eda and Salek with a promise of payment and land.',
                 'hide video cat-video',
@@ -178,7 +168,7 @@ monogatari.script ({
 
 	'blackGrape':[
         'show background black with fadeIn',
-		'show image Holocaust.jpeg with fadeIn',
+		'show image Holocaust.jpeg',
 		'The Holocaust was a genocide of a majority of the European Jews during World War 2. It happenede between 1941 and 1945, where Hitler and Nazi Germany systematically murdered six million Jews, erasing around two-thirds of the Jewish population and leaving the Jewish people to remain as 0.2% of the worlds population.',
 		'jump Ending',
 	],
