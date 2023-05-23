@@ -73,6 +73,7 @@ monogatari.assets ('images', {
      'Holocaust': 'Holocaust.jpg',
     '2Children': '2Children.jpeg',
     'HidingBaby':'HidingBaby.jpeg',
+    'OlderAnita': 'OlderAnita.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -85,6 +86,7 @@ monogatari.assets ('scenes', {
 	'Older Anita': 'OlderAnita.jpeg',
 	'crycat':'crycat2.jpeg',
     'Baby4': 'HidingBaby.jpeg',
+    'OlderAnita':'OlderAnita.jpeg',
 
 });
 
@@ -170,27 +172,27 @@ monogatari.script ({
 
 	'blackGrape':[
         'show background black with fadeIn',
-		'show image Holocaust.jpeg',
+		'show image Holocaust',
 		'The Holocaust was a genocide of a majority of the European Jews during World War 2. It happenede between 1941 and 1945, where Hitler and Nazi Germany systematically murdered six million Jews, erasing around two-thirds of the Jewish population and leaving the Jewish people to remain as 0.2% of the worlds population.',
+        'hide image Holocaust',
+        'show image Children',
 		'jump Ending',
 	],
 
 	'Ending':[
-		'show background Older Anita with fadeIn',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Anita passed away at her home in Silver Spring, Maryland. She passed at age 76, on June 27th,2019 from Parkinsons disease. Anita never forgave the Nazis for the violent acts they commited towards the Jewish people. "If you forgive people who commit genocide," she said, "the world will think its okay to commit more, thats why I will never forgive. ',
-                'Do': 'jump Closing',
+                'Do': 'jump closing.',
 			}
 		}
 		}
 	],
 
-	'Closing':[
-        'show background Older Anita with fadeIn',
-		'Links Used: https://www.haaretz.com/israel-news/2022-01-27/ty-article/6-million-where-is-the-figure-from/0000017f-da74-dea8-a77f-de761f480000 and https://collections.ushmm.org/search/catalog/irn512279#?rsc=24464&cv=0&c=0&m=0&s=0&xywh=1125%2C-57%2C1139%2C870.',
-		'Go make your own project now have fun lol',
-		'end'
+	'closing.':[
+		'insert scene of OlderAnita',
+        'Links Used: https://www.haaretz.com/israel-news/2022-01-27/ty-article/6-million-where-is-the-figure-from/0000017f-da74-dea8-a77f-de761f480000 and https://collections.ushmm.org/search/catalog/irn512279#?rsc=24464&cv=0&c=0&m=0&s=0&xywh=1125%2C-57%2C1139%2C870.',
+		'end',
 	]
 });
 
