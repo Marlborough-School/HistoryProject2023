@@ -66,16 +66,19 @@ monogatari.assets ('videos', {
 monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
 	'face': 'face.png',
+    'girl': 'girl.jpg',
+    'happy': 'happy.jpeg',
+    'side': 'side.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'spy':'spy.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
+	'action':'action.jpg',
+	'bike':'bike.jpg',
+	'duo':'duo.jpg',
+	'young':'young.jpg',
 	'crycat':'crycat2.jpeg',
 });
 
@@ -187,7 +190,7 @@ monogatari.component ('main-screen').template (() => {
 				<br/>
 				<br/>
 				<p>
-        <b> Female Spies </b>
+        <b> Jeannie Rousseau: The Secret Life of Spies </b>
 				<br/>
 				<br/>
         By: Hailey Webber
