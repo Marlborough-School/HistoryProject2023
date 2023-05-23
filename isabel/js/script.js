@@ -215,9 +215,13 @@ monogatari.script ({
         'show video MYMOVIE background',
         'In one of her tik toks, she shows her pendant, stating that it was the only piece of gold that survived auschwitz.',
         'hide video MYMOVIE',
+<<<<<<< HEAD
      
       
 		'jump Ending',
+=======
+        'jump Ending',
+>>>>>>> e89dde9e7e911405d0532409e876e5c91011ac81
 	],
 
 	'Ending':[

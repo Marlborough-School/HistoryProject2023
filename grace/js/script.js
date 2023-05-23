@@ -54,7 +54,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-	'cat-meow':'cat-meow.mp3',
+	'cat-meow':'gun.mp3',
 });
 
 // Define the videos used in the game.
@@ -72,11 +72,14 @@ monogatari.assets ('images', {
 monogatari.assets ('scenes', {
 	//'nickname for the background': 'actual name of the background',
 	'title':'degualle.jpg',
-	'duck2':'duck2.jpeg',
-	'black':'black.jpeg',
-	'grape':'blackgrape.jpeg',
-	'potatocat': 'potatocat.jpeg',
-	'crycat':'crycat2.jpeg',
+	'duck2':'group.jpg',
+	'black':'young.jpg',
+	'grape':'meeting.jpg',
+	'potatocat': 'stare.jpg',
+	'crycat':'sir.jpg',
+    'sillybilly': 'family.jpg',
+    'home':'radio.jpg',
+    'line':'line.jpg',
 });
 
 
@@ -101,29 +104,30 @@ monogatari.script ({
 
 	'yesAnswer':[
 		'show background black',
-		'Carles de Gualle was a Frenchman born in 1890, in Lillie, France into a wealthy and growing family of five at the time. His mother came from wealth, and his father was a successful history professor and founder of a school. He was highly influenced by his father \ and his uncle, also named Charles de Gualle, who was a historian and had an interest in military tactics. As he came into a family of scholars, he became highly literate and informed of French history at a young age, and had philosophical discussions about war and war tactics in his home led to his aspirations to have a military career. ',
+		'Carles de Gualle was a Frenchman born in 1890, in Lillie, France into a wealthy and growing family of five at the time. His mother came from wealth, and his father was a successful history professor and founder of a school. He was highly influenced by his father \ and his uncle, also named Charles de Gualle, who was a historian and had an interest in military tactics. As he came into a family of scholars, he became highly literate and informed of French history at a young age, and having philosophical discussions about war and war tactics in his home led to his aspirations to have a military career. ',
 		'jump choiceScreen',
 	],
 
 	'noAnswer':[
-		'show background black',
+		'show background sillybilly',
 		'He began his military career when he served in World War I, and was promoted to Captain during the Battle of Verdun where he was injured and taken captive. After this event he made tactical suggestions that were turned down by his higher-ups, but that was only the beginning for his military career. In between the first and second world war, Charles de Gaulle continued his education more formally at a military school until France was invaded by Nazi Germany in around 1939, when the second world war had begun.',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
 		'show background duck2 with fadeIn',
+        'Take a moment to follow this timeline following de Gualle through his experiences in WW2',
 		{'Choice':{
 			'1':{
-				'Text': 'Red Grapes',
+				'Text': 'First: The Early Battles of WW2',
 				'Do': 'jump redGrape',
 			},
 			'2':{
-				'Text': 'Green Grapes',
+				'Text': 'Second: Challenges the French Military Faced',
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'Black Grapes',
+				'Text': 'Third: Fighing France was Born',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -131,28 +135,28 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-		'show background duck with fadeIn',
-                'show video cat-video background',
-		'Sorry, we have no red grapes! I am sending you back to choose another option.',
+		'show background line with fadeIn',
+                'play sound cat-meow',
+		'When WW2 began, de Gualle was informed that he would lead an armored division and he immediately began finding and preparing staff and soldiers for his division. During his first battle, his army barely escaped defeat. Later on he took around 400 Nazi prisoners in order for his soliders to escape the area safely. Fighting back against Hitlor and contributing to the fight to maintain order in the world was far more important than the risk of loss. Through the leadership of de Gaulle the soldiers understood why they were fighting, and put more trust into his tactics and plans, as he has shown his skill and intelligence on the battlefield.',
                 'hide video cat-video',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
-                'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'show background grape with fadeIn',
+		'De Gaulle began to notice the challenges his army was facing, he did not panic and continued to develop more war strategies. He believed that through strategies and mobilization, they would be able to overcome the odds that were against them, and be able to take back control and power over their land. These issues included extreme geographic disadvantages and a lack of mobilization. This made it extremely difficult for his army and he began to implement his own tactics that were unlike traditional trench fighting tactings. Instead he used modern techniques comparable to those of Germany’s. Despite his great efforts, the French government began to surrender to Germany, which caused de Gaulle to flee to London.',
 		'jump choiceScreen',
 	],
 
 	'blackGrape':[
-		'show background grape with fadeIn',
-		'You found the grapes! Now we will go the end of the project',
+		'show background home with fadeIn',
+		'Once Charles de Gualle fled to London, he began to form an army of his own called the Free France Forces, which later became known as Fighting France, and encouraged others to stand up to Germany. He began spreading the word about his army and encouraging more soldiers to join him, and even went on the radio to encourage the resistance of Hitlor. After the French government’s surrender, they began to comply to and cooperate with the Nazi’s, so de Gaulle realized the urgency in which he needed to prepare his army. While in London de Gaulle made a deal with Churchill to support his Free French Forces against Hitlor. Their forces served in major battles and were able to win battles that led to the turning point in the war.',
 		'jump Ending',
 	],
 
 	'Ending':[
 		'show background potatocat with fadeIn',
+        'After persevering through the rest of the war with the Free French Forces, de Gaulle was able to secured the liberation of France and took the position as provisional President of France until stepping down in 1944. In conclusion, Charles de Gaulle dedicated his life to a military career because he wanted to be able to make a difference in history for the better, and continued to fight for what he believed in after his country had already surrendered. ',
 		{'Choice':{
 			'Closing':{
 				'Text': 'Conclusion',
@@ -164,8 +168,7 @@ monogatari.script ({
 
 	'Closing':[
 		'show background crycat with fadeIn',
-		'I hope you understand what you will be doing. If you do not, ask Senya in class for help.',
-		'Go make your own project now have fun lol',
+		'It is very important to recognize how he challenged the status quo of warfare, and pushed the French to further develop and advance their military equipment and strategies. De Gaulle’s founding of the Free French Forces showed French people, and parts of the world, that the fight against Hitlor was not over, and if the allied countries continued to work together they would be able to regain control over their own land and restore peace in the world.',
 		'end'
 	]
 });
