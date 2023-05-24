@@ -74,6 +74,8 @@ monogatari.assets ('images', {
     '2Children': '2Children.jpeg',
     'HidingBaby':'HidingBaby.jpeg',
     'OlderAnita': 'OlderAnita.jpeg',
+    'Baby3':'Baby3.jpeg',
+    'AnitaMother': 'AnitaMother.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -125,14 +127,15 @@ monogatari.script ({
 	'noAnswer':[
 		'show background black',
         'hide image Holocaust',
-    
 		'This is the wrong answer, but please proceed to learn more about Anitas life and experience as well as the history of the Holocaust.',
+        'hide image of Holocaust',
 		'jump choiceScreen',
 	],
 
 	'choiceScreen':[
+        'show image Anita4',
        'Anita was only a young child when the Holocaust occured. Though she never went to a camp, she was faced with faking an identity that she thought was her true identity.',
-        'show scene Baby3',
+        'show image Baby3',
     
 
 		{'Choice':{
@@ -142,7 +145,7 @@ monogatari.script ({
 			},
 			'2':{
                 'Text': 'Life After Survival',
-				'Do': 'Anita never forgave the Nazis for what she did to her family and the Jewish people. She wrote a book with her husband, Noel Epstein, about her experience. The purpose of her book is to assume her role as a survivor of the Holocaust and show the reader the importance of keeping memories of all who perished and survived alive. Anita went on to marrying her husband and having children with him as well as living to meet her grandchildren. One of Anitas children is my Godmother, and I am so honored to be family with her.',
+				'Do': 'jump greenGrape',
 			},
 			'3':{
 				'Text': 'Historical Information',
@@ -153,20 +156,27 @@ monogatari.script ({
 	],
 
 	'redGrape':[
-        'show image Parents with fadeIn',
+        'hide image Holocaust',
+        'show image Parents',
         'These are Anitas parents. Eda and Salek Kuesentler.',
                 'hide image Parents',
         'show image KrakowGhetto.jpeg',
 		'Anita was born into the Krawkow Ghetto on November 18th, 1942. Since she was only a baby, her parents knew that the only way she would survive is if they gave her to a Catholic family. Anita was given to a woman named Sophia Zendler by her parents Eda and Salek with a promise of payment and land.',
+        'hide image KrakowGhetto.jpeg',
+        'show image AnitaMother',
+        'This is Anitas mother, Eda. After giving birth to Anita, she had to give her up 4 months later. She survived many concentration camps to get back to her daughter.',
+        'Before giving up her daughter, she sent this photo with her, with her signing on the back, This is your real mother.',
+        'hide image AnitaMother',
         'show image HidingBaby with fadeIn',
+        'Anita was smuggled past SS guards by her father, Salek, while sedated in a leather valise, which is a fancy word for traveling bag. Anita managed to make it safely to the home of Sophia Zendler; the woman who would end up caring for Anita for the next couple of years.',
+        'show image Baby3',
                 'hide video cat-video',
 		'jump choiceScreen',
 	],
 
 	'greenGrape':[
-		'show background duck with fadeIn',
                 'play sound cat-meow',
-		'Sorry, we have no green grapes! I am sending you back to choose another option.',
+		'Anita never forgave the Nazis for what she did to her family and the Jewish people. She wrote a book with her husband, Noel Epstein, about her experience. The purpose of her book is to assume her role as a survivor of the Holocaust and show the reader the importance of keeping memories of all who perished and survived alive. Anita went on to marrying her husband and having children with him as well as living to meet her grandchildren. One of Anitas children is my Godmother, and I am so honored to be family with her.',
 		'jump choiceScreen',
 	],
 
@@ -190,7 +200,7 @@ monogatari.script ({
 	],
 
 	'closing.':[
-		'insert scene of OlderAnita',
+		'insert image of OlderAnita',
         'Links Used: https://www.haaretz.com/israel-news/2022-01-27/ty-article/6-million-where-is-the-figure-from/0000017f-da74-dea8-a77f-de761f480000 and https://collections.ushmm.org/search/catalog/irn512279#?rsc=24464&cv=0&c=0&m=0&s=0&xywh=1125%2C-57%2C1139%2C870.',
 		'end',
 	]
