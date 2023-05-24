@@ -314,7 +314,6 @@ monogatari.script ({
     
     'Closing2':[
 		'show background black with fadeIn',
-        'show image smile with fadeIn',
 		'In a way, Owen achieved his dreams of becoming an esteemed poet, providing us with some of the greatest works of British poetry the world has ever known.',
         'hide image smile with fadeIn',
 		'jump Closing3',
@@ -326,10 +325,10 @@ monogatari.script ({
         'Works Cited.',
         'hide image sources with fadeOut',
         'show image sources2 with fadeIn',
-        'Works Cited continued',
+        'Image credits.',
          'hide image sources2 with fadeOut',
         'show image sources3 with fadeIn',
-        'Works Cited continued',
+        'Image credits continued.',
         'hide image sources3 with fadeOut',
         'end'
 	],
