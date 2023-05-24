@@ -89,6 +89,9 @@ monogatari.assets ('scenes', {
 	'crycat':'crycat2.jpeg',
     'Baby4': 'HidingBaby.jpeg',
     'OlderAnita':'OlderAnita.jpeg',
+    'Book':'Book.jpeg',
+    'Threewomen':'Threewomen.jpeg',
+    'Baby4': 'Baby4.jpeg',
 
 });
 
@@ -133,7 +136,7 @@ monogatari.script ({
 	],
 
 	'choiceScreen':[
-        'show image Anita4',
+        'show image HidingBaby',
        'Anita was only a young child when the Holocaust occured. Though she never went to a camp, she was faced with faking an identity that she thought was her true identity.',
         'show image Baby3',
     
@@ -162,7 +165,7 @@ monogatari.script ({
                 'hide image Parents',
         'show image KrakowGhetto.jpeg',
 		'Anita was born into the Krawkow Ghetto on November 18th, 1942. Since she was only a baby, her parents knew that the only way she would survive is if they gave her to a Catholic family. Anita was given to a woman named Sophia Zendler by her parents Eda and Salek with a promise of payment and land.',
-        'hide image KrakowGhetto.jpeg',
+        'hide image KrakowGhetto.jpeg with fadeIn',
         'show image AnitaMother',
         'This is Anitas mother, Eda. After giving birth to Anita, she had to give her up 4 months later. She survived many concentration camps to get back to her daughter.',
         'Before giving up her daughter, she sent this photo with her, with her signing on the back, This is your real mother.',
@@ -175,8 +178,13 @@ monogatari.script ({
 	],
 
 	'greenGrape':[
-                'play sound cat-meow',
+            'hide image 2Children',
+        'show image OlderAnita',
 		'Anita never forgave the Nazis for what she did to her family and the Jewish people. She wrote a book with her husband, Noel Epstein, about her experience. The purpose of her book is to assume her role as a survivor of the Holocaust and show the reader the importance of keeping memories of all who perished and survived alive. Anita went on to marrying her husband and having children with him as well as living to meet her grandchildren. One of Anitas children is my Godmother, and I am so honored to be family with her.',
+        'show scene Book',
+        'This is the book they wrote, Miracle Child. It is a memoir documenting the life of a Jewish baby, that being Anita, who was born in the Krakow Ghetto. "In November 1942, three years after Hitler conquered Poland, and remarkably, escaping death-one of a mere one half percent of Jewish Children in Poland who survived during the Nazi era.',
+        'show scene Threewomen',
+        'Anitas life was saved because of her parents hiding her with a Catholic Family. Here in this photo is Anita, Sophia, and Eda- from left to right. "The book also depicts the authors postwar challenges in Germany and America. ',
 		'jump choiceScreen',
 	],
 
@@ -185,7 +193,7 @@ monogatari.script ({
 		'show image Holocaust',
 		'The Holocaust was a genocide of a majority of the European Jews during World War 2. It happenede between 1941 and 1945, where Hitler and Nazi Germany systematically murdered six million Jews, erasing around two-thirds of the Jewish population and leaving the Jewish people to remain as 0.2% of the worlds population.',
         'hide image Holocaust',
-        'show image Children',
+        'show scene Baby4',
 		'jump Ending',
 	],
 
