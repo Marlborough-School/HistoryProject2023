@@ -67,6 +67,8 @@ monogatari.assets ('images', {
 	//'nickname for the image': 'actual name of the image',
     //'yang':'YANG.jpg',
     'robert': 'robert1.png',
+    'photo': 'photo.png',
+    'sources': 'sources.png',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -197,8 +199,16 @@ monogatari.script ({
         'Stephen E. Ambrose is a historian who also wrote about Yang in his book D-Day: June 6, 1944: The Climactic Battle of World War II. In his book, one of the veterans he interviewed was Lieutenant Robert Brewer. He was the Lieutenant of the 506th Parachute Infantry Regiment. In his interview, Brewer mentioned his recollection of capturing four asian men in Wehrmacht uniforms. The men are referred to as young Japanese men, but one was in fact Korean, most likely Yang. While this photo of a Korean man is suspected to be Yang, nothing is professionally confirmed yet.',
         'The closest primary source there is to Yang is a quote from Lieutenant Brewer. The quote from Lieutenant Brewer states he saw, "four asians in German uniform".',
         
-        'The reason Yang Kyoungjong became so inspiring and talked about is not only because of his unique story, but because it shows how people were used in wars and how they just went along with it. Yang is an inspiration to the Asian community for going through those hardships in other countries and surviving through it all. He is a symbol of persisting through all his hardships.',
-		'end'
+        'The reason Yang Kyoungjong became so inspiring and talked about is not only because of his unique story, but because it shows how people were used in wars and how they just went along with it. Yang is an inspiration to the Asian comm,unity for going through those hardships in other countries and surviving through it all. He is a symbol of persisting through all his hardships.',
+    
+        'show background black with fadeIn', 
+        'show image sources with fadeIn',
+        'sources',
+        'hide image sources',
+        'show image photo with fadeIn',
+		'image credits',
+        
+        'end'
 	]
 });
 
