@@ -207,7 +207,6 @@ monogatari.script ({
         'hide image sources',
         'show image photo with fadeIn',
 		'image credits',
-        
         'end'
 	]
 });
