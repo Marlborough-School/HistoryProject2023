@@ -84,7 +84,8 @@ monogatari.assets ('images', {
     'LILY14':'LILY14.jpeg',
     'LILY15':'LILY15.jpeg',
     'LILY19':'LILY19.jpeg',
-    'BIB1':'BIB1',
+    'BIB1':'BIB1.jpeg',
+    'BIB2':'BIB2.jpeg',
 });
 
 //DEFINE THE BACKGROUNDS YOU WANT HERE
@@ -162,7 +163,7 @@ monogatari.script ({
 				'Do': 'jump greenGrape',
 			},
 			'3':{
-				'Text': 'A Tik Tok Star?',
+				'Text': 'Lilys TikTok Legacy',
 				'Do': 'jump blackGrape',
 			}
 		}
@@ -224,6 +225,10 @@ monogatari.script ({
 		 'Lily hopes that by sharing untold stories, her audience can retell those stories, aiming to change lives and perspectives. She wants everyone to understand just how terrible human beings have been and still can be to each other, and encourages young people to understand the significance of tolerance, love, and kindness. By educating her audience, whether that be adults or the younger generation, she hopes that they can build a better future. She wants to remind the gen-z-ers that regardless of skin color, nationality or religion, everyones blood is red. ',
         'hide image LILY19',
         'show image BIB1 with fadeIn',
+        '  ',
+        'hide image BIB1',
+        'show image BIB2 with fadeIn',
+        '  ',
       
 		
 	],
