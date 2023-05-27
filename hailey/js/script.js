@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-	'music':'music.mp3',
+
 });
 
 // Define the voice files used in the game.
@@ -86,34 +86,36 @@ monogatari.assets ('scenes', {
 //
 monogatari.script ({
 	'Start': [
-		'show background spy with fadeIn',
-        'play music music',
-		'Jeanne was an incredibly adventurous women with an inspiring story. ',
-		'Example question: Hey bum bum bum got any grapes?',
+		'show image kawamoto with fadeIn',
+		'Yoshitaka Kawamoto was only 13 years old when a lightning flash destroyed his hometown and took away his loved ones. It was the atomic bombing of Hiroshima, and he never forgot the pain and horror of that day.',
+        'hide image kawamoto with fadeOut',
+        
+        'show image destruction with fadeIn',
+		'“There were fires in the middle of the clouds. I checked my body…My left arm was pierced by a piece of wood that stuck in my flesh like an arrow…I had no other injuries, but I did not run away. We were taught that it was cowardly to desert ones classmates. So I crawled about the rubble, calling, \'Is there anyone alive?\'” (“What the Boy Saw: A Fire In the Sky” 1)',
+        'Were there many female spies in World War II?',
 		{'Choice':{
 			'Y':{
-				'Text': 'Yes, I do have grapes',
+				'Text': 'Yes',
 				'Do': 'jump yesAnswer'
 			},
 			'N':{
-				'Text': 'No, I do not sell grapes',
+				'Text': 'No',
 				'Do': 'jump noAnswer'
-			},
 		    },
 	        },
+        },
         ],
 
 	'yesAnswer':[
 		'show background black',
-        'show image face with fadeIn',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'Correct! Many women were recruited to become spies as they were less likely to be arrested or interrogated than men.',
+		'jump slide2',
 	],
 
 	'noAnswer':[
 		'show background black',
-		'You will be able to code more choices/buttons into your project. Click to see another example.',
-		'jump choiceScreen',
+		'Incorrect! Many women were recruited to become spies as they were less likely to be arrested or interrogated than men.',
+		'jump slide2',
 	],
 
 	'choiceScreen':[
